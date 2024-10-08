@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CadastroClienteActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="134dp"
+        android:layout_height="146dp"
+        android:layout_marginBottom="716dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/casa_em_ordem_logo_photoroom" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputSenha_cadastro_cliente"
+        android:layout_width="236dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="256dp"
+        android:elevation="10dp"
+        android:padding="3dp"
+        app:boxBackgroundColor="#D9D9D9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/idSenha_cadastro_cliente"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bordasnoinput"
+            android:elevation="3dp"
+            android:fontFamily="@font/lato"
+            android:hint="Senha..."
+            android:paddingLeft="15dp"
+            android:textAlignment="textStart"
+            android:textSize="12sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/idDigiteoNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="93dp"
+        android:layout_marginEnd="214dp"
+        android:fontFamily="@font/lato"
+        android:text="Digite seu nome:"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.36" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputEmail_Cadastro_cliente"
+        android:layout_width="236dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="344dp"
+        android:elevation="10dp"
+        android:padding="3dp"
+        app:boxBackgroundColor="#D9D9D9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/idEmail_Cadastro_cliente"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bordasnoinput"
+            android:elevation="3dp"
+            android:fontFamily="@font/lato"
+            android:hint="E-mail..."
+            android:paddingLeft="15dp"
+            android:textAlignment="textStart"
+            android:textSize="12sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputCPF"
+        android:layout_width="236dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="424dp"
+        android:elevation="10dp"
+        android:padding="3dp"
+        app:boxBackgroundColor="#D9D9D9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/idCPF"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bordasnoinput"
+            android:elevation="3dp"
+            android:fontFamily="@font/lato"
+            android:hint="CPF..."
+            android:paddingLeft="15dp"
+            android:textAlignment="textStart"
+            android:textSize="12sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/idDigiteoEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="93dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="227dp"
+        android:layout_marginBottom="4dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/lato"
+        android:text="Digite seu CPF:"
+        app:layout_constraintBottom_toTopOf="@+id/textInputCPF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputNome"
+        app:layout_constraintVertical_bias="0.375" />
+
+    <TextView
+        android:id="@+id/id_DigitaProfissao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="208dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/lato"
+        android:text="Digite sua senha:"
+        app:layout_constraintBottom_toTopOf="@+id/textInputSenha_cadastro_cliente"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="28dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="592dp"
+        app:layout_constraintStart_toEndOf="@+id/textInputSenha_cadastro_cliente"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ocultar_caracteres" />
+
+    <TextView
+        android:id="@+id/idDigitarSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/lato"
+        android:text="Digite seu e-mail:"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.297"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputCPF"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputNome"
+        android:layout_width="236dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="496dp"
+        android:elevation="10dp"
+        android:padding="3dp"
+        app:boxBackgroundColor="#D9D9D9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/idNome"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bordasnoinput"
+            android:elevation="3dp"
+            android:fontFamily="@font/lato"
+            android:hint="Nome..."
+            android:paddingLeft="15dp"
+            android:textAlignment="textStart"
+            android:textSize="12sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <FrameLayout
+        android:layout_width="70dp"
+        android:layout_height="266dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginBottom="596dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+
+            android:id="@+id/imageView"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="196dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/fotodeperfil_generica2" />
+
+        <ImageView
+            android:id="@+id/id_icone_editar_foto"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="bottom|right"
+            android:background="@drawable/shadow_circular"
+            android:elevation="20dp"
+            android:translationZ="4dp"
+            app:srcCompat="@drawable/icone_editar2"
+            tools:layout_editor_absoluteX="218dp"
+            tools:layout_editor_absoluteY="249dp" />
+
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/idCadastrarConta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/lato"
+        android:text="Cadastrar Conta - Cliente"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+
+    <Button
+        android:id="@+id/idBotaoCadastrar"
+        android:layout_width="140dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="163dp"
+        android:layout_marginBottom="60dp"
+        android:backgroundTint="#F2B807"
+        android:text="Cadastrar"
+        android:textColor="#f2f2f2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputSenha_cadastro_cliente" />
+
+
+
+    <RadioGroup
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="82dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.909"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputSenha_cadastro_cliente">
+
+        <RadioButton
+            android:id="@+id/radio_pirates"
+            android:layout_width="118dp"
+            android:layout_height="wrap_content"
+            android:text="Masculino" />
+
+        <RadioButton
+            android:id="@+id/radio_ninjas"
+            android:layout_width="109dp"
+            android:layout_height="wrap_content"
+            android:text="Feminino" />
+    </RadioGroup>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

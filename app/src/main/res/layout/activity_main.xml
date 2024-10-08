@@ -59,10 +59,6 @@
         android:layout_marginTop="1dp"
         android:layout_marginEnd="79dp"
         android:layout_marginBottom="8dp"
-        android:shadowColor="@android:color/darker_gray"
-        android:shadowDx="2"
-        android:shadowDy="6"
-        android:shadowRadius="3"
         android:text="Bem-vindo!"
         android:textColor="#000000"
         android:textSize="20sp"
@@ -108,20 +104,20 @@
         android:layout_marginTop="22dp"
         android:layout_marginEnd="95dp"
         android:layout_marginBottom="144dp"
-        android:text="Esqueceu sua senha?"
-        android:shadowColor="@android:color/darker_gray"
+
         android:shadowDx="2"
         android:shadowDy="6"
         android:shadowRadius="3"
+        android:text="Esqueceu sua senha?"
         android:textColor="@color/black"
         android:textSize="14sp"
         android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputSenha"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.006" />
 
     <Button
         android:id="@+id/idBotaoLogin"
@@ -148,10 +144,6 @@
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="30dp"
         android:text="Não tem uma conta?"
-        android:shadowColor="@android:color/darker_gray"
-        android:shadowDx="2"
-        android:shadowDy="6"
-        android:shadowRadius="3"
         android:textColor="@color/black"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -171,14 +163,10 @@
         android:textColor="@color/black"
         android:textSize="14sp"
         android:textStyle="italic"
-        android:shadowColor="@android:color/darker_gray"
-        android:shadowDx="2"
-        android:shadowDy="6"
-        android:shadowRadius="3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.376"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.938" />
+        app:layout_constraintVertical_bias="0.957" />
 </androidx.constraintlayout.widget.ConstraintLayout>
