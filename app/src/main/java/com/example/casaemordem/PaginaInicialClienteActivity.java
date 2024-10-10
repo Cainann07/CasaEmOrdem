@@ -1,6 +1,7 @@
 package com.example.casaemordem;
 
 import android.os.Bundle;
+import android.support.design.widget.BottomNavigationView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,15 +11,15 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class PaginaInicialClienteActivity extends AppCompatActivity {
 
+    private BottomNavigationView navigationView;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_pagina_inicial_cliente);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
+
+        navigationView = (BottomNavigationView) findViewById(R.id.navigationView);
+
     }
 }
