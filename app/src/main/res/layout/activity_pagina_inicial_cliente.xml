@@ -26,6 +26,6 @@
         app:itemBackground="@color/cardview_dark_background"
         app:itemIconTint="@color/white"
         app:itemTextColor="@color/white"
-        app:menu="@menu/"/>
+        app:menu="@menu/navegacao"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
