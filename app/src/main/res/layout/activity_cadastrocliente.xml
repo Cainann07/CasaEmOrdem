@@ -36,7 +36,7 @@
 
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/idSenha_cadastro_cliente"
+            android:id="@+id/idCadastroProfissao"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:background="@drawable/bordasnoinput"
@@ -80,7 +80,7 @@
 
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/idEmail_Cadastro_cliente"
+            android:id="@+id/idCadastroSenha"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:background="@drawable/bordasnoinput"
@@ -109,7 +109,7 @@
 
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/idCPF"
+            android:id="@+id/idCadastroEmail"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:background="@drawable/bordasnoinput"
@@ -192,7 +192,7 @@
 
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/idNome"
+            android:id="@+id/idCadastroNome"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:background="@drawable/bordasnoinput"
