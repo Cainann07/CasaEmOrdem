@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">CasaEmOrdem</string>
+    <string name="camp_Txt_nome">Nome</string>
+    <string name="camp_Txt_email">Email</string>
+    <string name="camp_Txt_senha">Senha</string>
+    <string name="camp_Txt_confirmar_senha">Confirmar Senha</string>
+    <string name="camp_Txt_prof">Profissão</string>
+
 </resources>
