@@ -1,7 +1,7 @@
 package com.example.casaemordem;
 
 import android.os.Bundle;
-//import android.support.design.widget.BottomNavigationView;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,7 +21,7 @@ public class PaginaInicialClienteActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pagina_inicial_cliente);
 
-        navigationView = (BottomNavigationView) findViewById(R.id.navigationView);
+       // navigationView = (BottomNavigationView) findViewById(R.id.navigationView);
 
     }
 }
