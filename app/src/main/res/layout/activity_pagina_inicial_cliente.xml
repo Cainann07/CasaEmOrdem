@@ -8,27 +8,25 @@
     android:orientation="vertical"
     tools:context=".PaginaInicialClienteActivity">
 
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
     <FrameLayout
         android:id="@+id/frameLayout"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1" />
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="layout/"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        android:elevation="4dp"
-        android:title="Página Inicial"
-        android:titleTextColor="@android:color/white" />
-
    <com.google.android.material.bottomnavigation.BottomNavigationView
        android:id="@+id/bottomNav"
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
-       app:menu="@menu/bottom_nav"/>
+       app:menu="@menu/bottom_nav"
+       app:itemIconTint="@color/cor_dos_icones"
+       app:itemTextColor="@color/cor_dos_icones"/>
 
 
 </LinearLayout>
