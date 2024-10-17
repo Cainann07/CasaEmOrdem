@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
-    <solid android:color="#5C5B5B"/>
-    <corners android:radius="10dp"/>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <!-- Camada da sombra -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#00000000"/>  <!-- Transparente -->
+            android:endColor="#40000000"    <!-- Sombra escura -->
+            android:angle="270" />          <!-- Direção de cima para baixo -->
+        </shape>
+    </item>
 
-</shape>
+    <!-- Camada do conteúdo principal -->
+    <item android:left="2dp" android:right="2dp" android:top="2dp" android:bottom="8dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#f2daf2" />  <!-- Cor do fundo -->
+            <corners android:radius="10dp" />  <!-- Cantos arredondados -->
+        </shape>
+    </item>
+
+</layer-list>
