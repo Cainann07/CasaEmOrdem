@@ -13,6 +13,9 @@
         android:theme="@style/Theme.CasaEmOrdem"
         tools:targetApi="31">
         <activity
+            android:name=".SelecionarProfissionalActivity"
+            android:exported="false" />
+        <activity
             android:name=".ContrataServicoActivity"
             android:exported="false" />
         <activity
