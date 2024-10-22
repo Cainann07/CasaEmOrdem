@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+        <!-- Sombra Superior -->
+        <item android:top="0dp">
+            <shape android:shape="rectangle">
+                <gradient
+                    android:startColor="#40000000"
+                    android:endColor="@android:color/transparent"
+                    android:angle="90"
+                    />  <!-- Sombra preta translúcida -->
+            </shape>
+        </item>
+
+        <!-- Fundo Branco do Layout -->
+        <item android:top="8dp" android:bottom="8dp">
+            <shape android:shape="rectangle">
+                <solid android:color="@android:color/white" />
+            </shape>
+        </item>
+
+        <!-- Sombra Inferior -->
+        <item android:gravity="bottom">
+            <shape android:shape="rectangle">
+                <gradient
+                    android:startColor="@android:color/transparent"
+                    android:endColor="#40000000"
+                    android:angle="90" />
+            </shape>
+        </item>
+    </layer-list>
+
+</selector>
