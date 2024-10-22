@@ -8,133 +8,27 @@
     android:orientation="vertical"
     tools:context=".PaginaInicialClienteActivity">
 
-    <include
-        layout="@layout/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-
     <FrameLayout
         android:id="@+id/frameLayout"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1" >
+        android:layout_weight="1" />
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#F2F2F2">
-
-            <TextView
-                android:id="@+id/idTexto1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="150dp"
-                android:layout_marginTop="69dp"
-                android:layout_marginEnd="148dp"
-                android:layout_marginBottom="672dp"
-                android:text="Seja bem-vindo!"
-                android:textColor="@color/black"
-                android:textSize="20sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.533"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="1.0" />
-
-            <TextView
-                android:id="@+id/idtexto2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="107dp"
-                android:layout_marginTop="40dp"
-                android:layout_marginEnd="107dp"
-                android:layout_marginBottom="610dp"
-                android:text="Sugestão de serviço doméstico"
-                android:textColor="@color/black"
-                android:textSize="16sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/idTexto1" />
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="230dp"
-                android:layout_height="300dp"
-                android:layout_marginStart="90dp"
-                android:layout_marginTop="34dp"
-                android:layout_marginEnd="91dp"
-                android:layout_marginBottom="276dp"
-                android:background="@drawable/borda_conteiner_pag_inicial"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/idtexto2">
-
-                <ImageView
-                    android:id="@+id/imageView6"
-                    android:layout_width="244dp"
-                    android:layout_height="154dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.0"
-                    app:srcCompat="@drawable/diarista2" />
-
-                <TextView
-                    android:id="@+id/idTexto3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="18dp"
-                    android:layout_marginBottom="116dp"
-                    android:text="Limpeza padrão"
-                    android:textColor="#000000"
-                    android:textSize="16sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="parent" />
-
-                <TextView
-                    android:id="@+id/idTexto4"
-                    android:layout_width="197dp"
-                    android:layout_height="40dp"
-                    android:layout_marginTop="196dp"
-                    android:text="Limpeza na medida certa para as necessidades do dia-a-dia "
-                    android:textColor="#80000000"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.515"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <Button
-                    android:id="@+id/btnAgendarServico"
-                    android:layout_width="173dp"
-                    android:layout_height="48dp"
-                    android:layout_marginBottom="8dp"
-                    android:backgroundTint="#F2B807"
-                    android:text="Agendar serviço"
-                    android:textSize="15sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    />
-            </androidx.constraintlayout.widget.ConstraintLayout>
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-    </FrameLayout>
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNav"
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#D7D7D7"
-        app:itemIconTint="@color/cor_dos_icones"
-        app:itemTextColor="@color/cor_dos_icones"
-        app:menu="@menu/bottom_nav" />
+        android:background="layout/"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:elevation="4dp"
+        android:title="Página Inicial"
+        android:titleTextColor="@android:color/white" />
+
+   <com.google.android.material.bottomnavigation.BottomNavigationView
+       android:id="@+id/bottomNav"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       app:menu="@menu/bottom_nav"/>
 
 
 </LinearLayout>

@@ -13,22 +13,17 @@
         android:theme="@style/Theme.CasaEmOrdem"
         tools:targetApi="31">
         <activity
-            android:name=".SelecionarProfissionalActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ContrataServicoActivity"
-            android:exported="false" />
-        <activity
             android:name=".PaginaInicialClienteActivity"
             android:exported="false" />
         <activity
             android:name=".CadastroProfissionalActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:exported="true" >
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
         </activity>
         <activity
             android:name=".CadastroClienteActivity"
@@ -37,7 +32,8 @@
             android:name=".MainActivity"
             android:exported="false"
             android:label="@string/app_name"
-            android:theme="@style/Theme.PaginaCadastro" />
+            android:theme="@style/Theme.PaginaCadastro"/>
+
 
         <meta-data
             android:name="preloaded_fonts"

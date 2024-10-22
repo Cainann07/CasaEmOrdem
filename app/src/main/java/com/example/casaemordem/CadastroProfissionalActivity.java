@@ -23,6 +23,8 @@ public class CadastroProfissionalActivity extends AppCompatActivity {
 
     private DatabaseReference databaseReference;
 
+    UsuarioProfissional usuario_prof = null;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,13 +50,16 @@ public class CadastroProfissionalActivity extends AppCompatActivity {
         EditText txtSenha = findViewById(R.id.idCadastroSenha);
         EditText txtConfirmaSenha = findViewById(R.id.idConfirmaSenha);
         EditText txtProfissao = findViewById(R.id.idCadastroProfissao);
-//         while (txtSenha != txtConfirmaSenha) {
-//                 Toast.makeText(this, "Senha não é compatível com a confirmação", Toast.LENGTH_SHORT).show();
-//             };
         UsuarioProfissional usuario_prof = new UsuarioProfissional(
                 UUID.randomUUID().toString(), txtNome.getText().toString(), txtEmail.getText().toString()
                 , txtSenha.getText().toString(), txtProfissao.getText().toString());
-
+//         if (txtSenha != txtConfirmaSenha) {
+//              Toast.makeText(this, "Senha não é compatível com a confirmação", Toast.LENGTH_SHORT).show();
+//             }else {
+//             UsuarioProfissional usuario_prof = new UsuarioProfissional(
+//                     UUID.randomUUID().toString(), txtNome.getText().toString(), txtEmail.getText().toString()
+//                     , txtSenha.getText().toString(), txtProfissao.getText().toString());
+//         }
         databaseReference.child("usuario").child(usuario_prof.getUUID()).setValue(usuario_prof);
 
         txtNome.setText(null);

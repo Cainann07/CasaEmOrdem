@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1093015992920",
+    "project_id": "casa-emordem",
+    "storage_bucket": "casa-emordem.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1093015992920:android:f7140bbce4365e35fba82d",
+        "android_client_info": {
+          "package_name": "com.example.casaemordem"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6t6gb9h9dv65RCMVV-SD6EW189ApGcMA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
