@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -13,122 +13,103 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
+    <!-- CardView que envolve o ConstraintLayout -->
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="93dp"
+        android:layout_marginTop="44dp"
         android:text="Contratar serviço"
         android:textColor="@color/black"
-        android:textSize="20dp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/include" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="54dp"
-        android:layout_marginBottom="698dp"
+        android:layout_marginTop="32dp"
         android:text="Profissionais disponíveis"
         android:textColor="@color/black"
-        android:textSize="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
-
+        app:layout_constraintTop_toBottomOf="@id/textView3" />
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="85dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="93dp"
+        android:layout_marginTop="16dp"
         android:clickable="true"
         android:foreground="?attr/selectableItemBackground"
         android:padding="8dp"
         app:cardCornerRadius="8dp"
         app:cardElevation="4dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView3"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.625"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@id/textView4">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/sombra_topo_base"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/icone_perfil"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:contentDescription="Ícone de pessoa"
+                android:padding="8dp"
+                android:src="@drawable/fotodeperfil_generica2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/nome"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Daniela Souza"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/icone_perfil"
+                app:layout_constraintTop_toTopOf="@id/icone_perfil" />
+
+            <TextView
+                android:id="@+id/valor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="R$ 130"
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@id/nome"
+                app:layout_constraintTop_toBottomOf="@id/nome" />
+
+            <TextView
+                android:id="@+id/descricao"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Classe A - Equipamentos de alta qualidade"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/nome"
+                app:layout_constraintTop_toBottomOf="@id/valor" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.cardview.widget.CardView>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_marginTop="17dp"
-        android:layout_marginBottom="564dp"
-        android:padding="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
-        app:layout_constraintVertical_bias="0.0">
-
-        <ImageView
-            android:id="@+id/icon"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:background="@drawable/fotodeperfil_generica2"
-            android:contentDescription="Ícone de pessoa"
-            android:padding="8dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/nome"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:text="Daniela Souza"
-            android:textColor="@android:color/black"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@id/icon"
-            app:layout_constraintTop_toTopOf="@id/icon" />
-
-        <TextView
-            android:id="@+id/valor"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:text="R$ 130"
-            android:textColor="@android:color/holo_green_dark"
-            android:textSize="16sp"
-            app:layout_constraintEnd_toEndOf="@id/nome"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@id/nome"
-            app:layout_constraintTop_toBottomOf="@id/nome" />
-
-        <TextView
-            android:id="@+id/descricao"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:layout_marginBottom="9dp"
-            android:text="Classe A - Equipamentos de alta qualidade"
-            android:textColor="@android:color/darker_gray"
-            android:textSize="14sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@id/nome"
-            app:layout_constraintTop_toBottomOf="@id/valor"
-            app:layout_constraintVertical_bias="0.368" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
