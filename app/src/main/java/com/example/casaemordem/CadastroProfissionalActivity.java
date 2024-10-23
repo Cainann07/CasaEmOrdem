@@ -1,5 +1,6 @@
 package com.example.casaemordem;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -50,16 +51,11 @@ public class CadastroProfissionalActivity extends AppCompatActivity {
         EditText txtSenha = findViewById(R.id.idCadastroSenha);
         EditText txtConfirmaSenha = findViewById(R.id.idConfirmaSenha);
         EditText txtProfissao = findViewById(R.id.idCadastroProfissao);
+
         UsuarioProfissional usuario_prof = new UsuarioProfissional(
                 UUID.randomUUID().toString(), txtNome.getText().toString(), txtEmail.getText().toString()
                 , txtSenha.getText().toString(), txtProfissao.getText().toString());
-//         if (txtSenha != txtConfirmaSenha) {
-//              Toast.makeText(this, "Senha não é compatível com a confirmação", Toast.LENGTH_SHORT).show();
-//             }else {
-//             UsuarioProfissional usuario_prof = new UsuarioProfissional(
-//                     UUID.randomUUID().toString(), txtNome.getText().toString(), txtEmail.getText().toString()
-//                     , txtSenha.getText().toString(), txtProfissao.getText().toString());
-//         }
+
         databaseReference.child("usuario").child(usuario_prof.getUUID()).setValue(usuario_prof);
 
         txtNome.setText(null);
@@ -68,6 +64,28 @@ public class CadastroProfissionalActivity extends AppCompatActivity {
         txtConfirmaSenha.setText(null);
         txtProfissao.setText(null);
         Toast.makeText(this, "Dados salvos com sucesso", Toast.LENGTH_SHORT).show();
+        Intent proxPag = new Intent(CadastroProfissionalActivity.this, PaginaLoginActivity.class);
+        startActivity(proxPag);
+
+//         if (!txtSenha.equals(txtConfirmaSenha)) {
+//              Toast.makeText(this, "Senha não é compatível com a confirmação", Toast.LENGTH_SHORT).show();
+//             }else {
+//             UsuarioProfissional usuario_prof = new UsuarioProfissional(
+//                     UUID.randomUUID().toString(), txtNome.getText().toString(), txtEmail.getText().toString()
+//                     , txtSenha.getText().toString(), txtProfissao.getText().toString());
+//
+//             databaseReference.child("usuario").child(usuario_prof.getUUID()).setValue(usuario_prof);
+//
+//             txtNome.setText(null);
+//             txtEmail.setText(null);
+//             txtSenha.setText(null);
+//             txtConfirmaSenha.setText(null);
+//             txtProfissao.setText(null);
+//             Toast.makeText(this, "Dados salvos com sucesso", Toast.LENGTH_SHORT).show();
+//             Intent proxPag = new Intent(CadastroProfissionalActivity.this, PaginaLoginActivity.class);
+//             startActivity(proxPag);
+//         }
+
     }
 
 }
