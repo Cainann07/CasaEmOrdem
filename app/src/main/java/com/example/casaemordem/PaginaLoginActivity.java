@@ -52,8 +52,13 @@ public class PaginaLoginActivity extends AppCompatActivity {
                     if (dataSnapshot.exists()) {
                         for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
                             UsuarioProfissional usuario = snapshot.getValue(UsuarioProfissional.class);
-                            Intent proxPag = new Intent(PaginaLoginActivity.this, PaginaInicialClienteActivity.class);
-                            startActivity(proxPag);
+                            if (!usuario.getSenha().equals(senhaBusca)){
+                                Toast.makeText(PaginaLoginActivity.this, "\"Senha inválida.\"" , Toast.LENGTH_LONG).show();
+                                break;
+                            } else {
+                                Intent proxPag = new Intent(PaginaLoginActivity.this, PaginaInicialClienteActivity.class);
+                                startActivity(proxPag);
+                            }
 
                         }
                     } else {

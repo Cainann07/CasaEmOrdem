@@ -52,40 +52,41 @@ public class CadastroProfissionalActivity extends AppCompatActivity {
         EditText txtConfirmaSenha = findViewById(R.id.idConfirmaSenha);
         EditText txtProfissao = findViewById(R.id.idCadastroProfissao);
 
-        UsuarioProfissional usuario_prof = new UsuarioProfissional(
-                UUID.randomUUID().toString(), txtNome.getText().toString(), txtEmail.getText().toString()
-                , txtSenha.getText().toString(), txtProfissao.getText().toString());
-
-        databaseReference.child("usuario").child(usuario_prof.getUUID()).setValue(usuario_prof);
-
-        txtNome.setText(null);
-        txtEmail.setText(null);
-        txtSenha.setText(null);
-        txtConfirmaSenha.setText(null);
-        txtProfissao.setText(null);
-        Toast.makeText(this, "Dados salvos com sucesso", Toast.LENGTH_SHORT).show();
-        Intent proxPag = new Intent(CadastroProfissionalActivity.this, PaginaLoginActivity.class);
-        startActivity(proxPag);
-
-//         if (!txtSenha.equals(txtConfirmaSenha)) {
-//              Toast.makeText(this, "Senha não é compatível com a confirmação", Toast.LENGTH_SHORT).show();
-//             }else {
-//             UsuarioProfissional usuario_prof = new UsuarioProfissional(
-//                     UUID.randomUUID().toString(), txtNome.getText().toString(), txtEmail.getText().toString()
-//                     , txtSenha.getText().toString(), txtProfissao.getText().toString());
+//        UsuarioProfissional usuario_prof = new UsuarioProfissional(
+//                UUID.randomUUID().toString(), txtNome.getText().toString(), txtEmail.getText().toString()
+//                , txtSenha.getText().toString(), txtProfissao.getText().toString());
 //
-//             databaseReference.child("usuario").child(usuario_prof.getUUID()).setValue(usuario_prof);
+//        databaseReference.child("usuario").child(usuario_prof.getUUID()).setValue(usuario_prof);
 //
-//             txtNome.setText(null);
-//             txtEmail.setText(null);
-//             txtSenha.setText(null);
-//             txtConfirmaSenha.setText(null);
-//             txtProfissao.setText(null);
-//             Toast.makeText(this, "Dados salvos com sucesso", Toast.LENGTH_SHORT).show();
-//             Intent proxPag = new Intent(CadastroProfissionalActivity.this, PaginaLoginActivity.class);
-//             startActivity(proxPag);
+//        txtNome.setText(null);
+//        txtEmail.setText(null);
+//        txtSenha.setText(null);
+//        txtConfirmaSenha.setText(null);
+//        txtProfissao.setText(null);
+//        Toast.makeText(this, "Dados salvos com sucesso", Toast.LENGTH_SHORT).show();
+//        Intent proxPag = new Intent(CadastroProfissionalActivity.this, PaginaLoginActivity.class);
+//        startActivity(proxPag);
+
+        if (!txtSenha.getText().toString().equals(txtConfirmaSenha.getText().toString())) {
+            Toast.makeText(this, "Senha não é compatível com a confirmação", Toast.LENGTH_SHORT).show();
+        } else {
+            UsuarioProfissional usuario_prof = new UsuarioProfissional(
+                    UUID.randomUUID().toString(), txtNome.getText().toString(), txtEmail.getText().toString()
+                    , txtSenha.getText().toString(), txtProfissao.getText().toString());
+
+            databaseReference.child("usuario").child(usuario_prof.getUUID()).setValue(usuario_prof);
+
+            txtNome.setText(null);
+            txtEmail.setText(null);
+            txtSenha.setText(null);
+            txtConfirmaSenha.setText(null);
+            txtProfissao.setText(null);
+            Toast.makeText(this, "Dados salvos com sucesso", Toast.LENGTH_SHORT).show();
+            Intent proxPag = new Intent(CadastroProfissionalActivity.this, PaginaLoginActivity.class);
+            startActivity(proxPag);
 //         }
 
-    }
+        }
 
+    }
 }
