@@ -8,6 +8,13 @@
     android:orientation="vertical"
     tools:context=".PaginaInicialClienteActivity">
 
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
     <FrameLayout
         android:id="@+id/frameLayout"
         android:layout_width="match_parent"
