@@ -42,8 +42,6 @@ public class PaginaLoginActivity extends AppCompatActivity {
     public void buscarUsuario(View view) {
         String emailBusca = txtBuscaEmail.getText().toString();
         String senhaBusca = txtBuscaSenha.getText().toString();
-        String chaveEmail;
-        String chaveSenha;
 
         if (!emailBusca.isEmpty() && !senhaBusca.isEmpty() ) {
             databaseReference.orderByChild("email").equalTo(emailBusca).addListenerForSingleValueEvent(new ValueEventListener() {
