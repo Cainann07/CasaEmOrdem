@@ -42,8 +42,6 @@ public class PaginaLoginActivity extends AppCompatActivity {
     public void buscarUsuario(View view) {
         String emailBusca = txtBuscaEmail.getText().toString();
         String senhaBusca = txtBuscaSenha.getText().toString();
-        String chaveEmail;
-        String chaveSenha;
 
         if (!emailBusca.isEmpty() && !senhaBusca.isEmpty() ) {
             databaseReference.orderByChild("email").equalTo(emailBusca).addListenerForSingleValueEvent(new ValueEventListener() {
@@ -52,8 +50,13 @@ public class PaginaLoginActivity extends AppCompatActivity {
                     if (dataSnapshot.exists()) {
                         for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
                             UsuarioProfissional usuario = snapshot.getValue(UsuarioProfissional.class);
-                            Intent proxPag = new Intent(PaginaLoginActivity.this, PaginaInicialClienteActivity.class);
-                            startActivity(proxPag);
+                            if (!usuario.getSenha().equals(senhaBusca)){
+                                Toast.makeText(PaginaLoginActivity.this, "\"Senha inválida.\"" , Toast.LENGTH_LONG).show();
+                                break;
+                            } else {
+                                Intent proxPag = new Intent(PaginaLoginActivity.this, PaginaInicialClienteActivity.class);
+                                startActivity(proxPag);
+                            }
 
                         }
                     } else {
