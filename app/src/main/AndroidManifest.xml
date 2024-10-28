@@ -29,7 +29,9 @@
             android:exported="false" />
         <activity
             android:name=".CadastroProfissionalActivity"
-            android:exported="true"></activity>
+            android:exported="true">
+
+        </activity>
         <activity
             android:name=".CadastroClienteActivity"
             android:exported="false" />
