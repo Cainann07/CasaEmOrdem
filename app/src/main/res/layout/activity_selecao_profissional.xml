@@ -1,11 +1,11 @@
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SelecionarProfissionalActivity">
+    tools:context=".SelecaoProfissionalActivity">
 
     <include
         android:id="@+id/include"
@@ -19,9 +19,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
+        android:layout_marginBottom="32dp"
         android:text="Contratar serviço"
         android:textColor="@color/black"
         android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtProfissionalDisponivel"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -32,9 +34,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
+        android:layout_marginBottom="8dp"
         android:text="Profissionais disponíveis"
         android:textColor="@color/black"
         android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/conteiner_profissional"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/txtContratarServico2" />
@@ -65,10 +69,12 @@
                 android:id="@+id/icone_perfil"
                 android:layout_width="65dp"
                 android:layout_height="65dp"
+                android:layout_marginEnd="8dp"
                 android:contentDescription="Ícone de pessoa"
                 android:padding="8dp"
                 android:src="@drawable/fotodeperfil_generica2"
                 app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/nome"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -77,10 +83,12 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
+                android:layout_marginBottom="4dp"
                 android:text="Daniela Souza"
                 android:textColor="@android:color/black"
                 android:textSize="18sp"
                 android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/valor"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@id/icone_perfil"
                 app:layout_constraintTop_toTopOf="@id/icone_perfil" />
@@ -90,9 +98,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
+                android:layout_marginEnd="256dp"
+                android:layout_marginBottom="4dp"
                 android:text="R$ 130"
                 android:textColor="@android:color/holo_green_dark"
                 android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@+id/descricao"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@id/nome"
                 app:layout_constraintTop_toBottomOf="@id/nome" />
 
@@ -113,4 +126,16 @@
 
     </androidx.cardview.widget.CardView>
 
+    <ListView
+        android:id="@+id/idListaProfissinais"
+        android:layout_width="409dp"
+        android:layout_height="573dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/conteiner_profissional" />
 </androidx.constraintlayout.widget.ConstraintLayout>

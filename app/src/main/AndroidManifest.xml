@@ -12,17 +12,23 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CasaEmOrdem"
         tools:targetApi="31">
+
+        <activity
+            android:name=".SelecaoProfissionalActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".FormaPagamentoActivity"
             android:exported="false" />
         <activity
             android:name=".PaginaLoginActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".PaginaInicialClienteActivity"
