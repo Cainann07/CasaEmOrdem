@@ -74,7 +74,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="Quem irá me atender?"
+            android:text="&quot;Quem irá me atender?&quot;"
             android:textColor="#000000"
             android:textSize="14sp"
             android:textStyle="bold"
