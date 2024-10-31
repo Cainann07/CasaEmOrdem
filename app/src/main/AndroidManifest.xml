@@ -12,10 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CasaEmOrdem"
         tools:targetApi="31">
-
+        <activity
+            android:name=".ProfissionaisListViewActivity"
+            android:exported="false" />
         <activity
             android:name=".SelecaoProfissionalActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -27,17 +29,13 @@
             android:exported="false" />
         <activity
             android:name=".PaginaLoginActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".PaginaInicialClienteActivity"
             android:exported="false" />
         <activity
             android:name=".CadastroProfissionalActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".CadastroClienteActivity"
             android:exported="false" />
