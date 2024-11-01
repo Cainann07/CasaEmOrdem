@@ -116,21 +116,23 @@
         app:layout_constraintVertical_bias="0.084">
 
         <TextView
-            android:id="@+id/tv_service_title"
+            android:id="@+id/txtTituloServico"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
+            android:layout_marginEnd="171dp"
             android:fontFamily="@font/lato_bold"
             android:text="Limpeza padrão"
             android:textColor="#FFFFFF"
             android:textSize="16sp"
             android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/tv_order_code"
+            android:id="@+id/txtCodigoPedido"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -141,13 +143,13 @@
             android:text="Código do pedido: #5E4C29-1"
             android:textColor="#B0BEC5"
             android:textSize="12sp"
-            app:layout_constraintBottom_toTopOf="@+id/tv_date_time"
+            app:layout_constraintBottom_toTopOf="@+id/txtDataHoraServico"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_service_title" />
+            app:layout_constraintTop_toBottomOf="@+id/txtTituloServico" />
 
         <TextView
-            android:id="@+id/tv_date_time"
+            android:id="@+id/txtDataHoraServico"
             android:layout_width="240dp"
             android:layout_height="20dp"
             android:layout_marginTop="34dp"
@@ -158,10 +160,10 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_order_code" />
+            app:layout_constraintTop_toBottomOf="@+id/txtCodigoPedido" />
 
         <TextView
-            android:id="@+id/tv_professional_name"
+            android:id="@+id/txtNomeProfissional"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="89dp"
@@ -174,19 +176,19 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_date_time" />
+            app:layout_constraintTop_toBottomOf="@+id/txtDataHoraServico" />
 
         <ImageView
-            android:id="@+id/imageView6"
+            android:id="@+id/imgProfissional"
             android:layout_width="68dp"
             android:layout_height="68dp"
             android:layout_marginTop="12dp"
             android:layout_marginBottom="13dp"
-            app:layout_constraintBottom_toTopOf="@+id/tv_professional_name"
+            app:layout_constraintBottom_toTopOf="@+id/txtNomeProfissional"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_date_time"
+            app:layout_constraintTop_toBottomOf="@+id/txtDataHoraServico"
             app:srcCompat="@drawable/fotodeperfil_generica2" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
