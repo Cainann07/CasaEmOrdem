@@ -8,4 +8,6 @@
     <style name="Theme.CasaEmOrdem" parent="Base.Theme.CasaEmOrdem" />
 
     <style name="Theme.PaginaCadastro" parent="android:Theme.Material.Light.NoActionBar" />
+
+
 </resources>
