@@ -38,7 +38,7 @@
         </activity>
         <activity
             android:name=".PaginaInicialClienteActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".CadastroProfissionalActivity"
             android:exported="true" />
