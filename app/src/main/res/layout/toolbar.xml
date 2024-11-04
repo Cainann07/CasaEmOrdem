@@ -7,25 +7,27 @@
     android:padding="3dp">
 
     <ImageView
+        android:id="@+id/icone_voltar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/baseline_arrow_back_24"
-        android:layout_marginTop="7dp"/>
+        android:layout_marginTop="7dp"
+        android:src="@drawable/baseline_arrow_back_24" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/icone_logo"
         android:layout_width="50dp"
         android:layout_height="45dp"
         android:layout_centerHorizontal="true"
         app:srcCompat="@drawable/casa_em_ordem_logo_photoroom" />
 
     <ImageView
+        android:id="@+id/icone_menu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/baseline_menu_24"
         android:layout_alignParentEnd="true"
         android:layout_marginTop="7dp"
-        android:layout_marginEnd="3dp"/>
+        android:layout_marginEnd="3dp"
+        android:src="@drawable/baseline_menu_24" />
 
 
 </RelativeLayout>

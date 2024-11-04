@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MeusServicosHistoricoActivity">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="277dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout5"
+        app:menu="@menu/bottom_nav" />
+
+    <TextView
+        android:id="@+id/txtMeusServicos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="113dp"
+        android:layout_marginBottom="23dp"
+        android:background="#FFC107"
+        android:fontFamily="@font/lato_bold"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Meus Serviços"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="450dp"
+        android:background="#FFC107"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Aba "Agendados" -->
+        <TextView
+            android:id="@+id/btnAgendados"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:fontFamily="@font/lato"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="Agendados"
+            android:textColor="#000000"
+             />
+
+        <!-- Aba "Pendentes" -->
+
+        <!-- Aba "Histórico" -->
+        <TextView
+            android:id="@+id/btnPendentes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:fontFamily="@font/lato"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="Pendentes"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/btnHistorico"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:fontFamily="@font/lato"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="Histórico"
+            android:textColor="#000000"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout5"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginBottom="303dp"
+        android:background="@drawable/borda_conteiner_constraint_layout"
+        android:backgroundTint="#575757"
+        android:src="@drawable/baseline_info_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

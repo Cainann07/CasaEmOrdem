@@ -13,6 +13,12 @@
         android:theme="@style/Theme.CasaEmOrdem"
         tools:targetApi="35">
         <activity
+            android:name=".MeusServicosHistoricoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MeusServicosPendentesActivity"
+            android:exported="false" />
+        <activity
             android:name=".MeusServicosAgendadosActivity"
             android:exported="false" />
         <activity
@@ -20,13 +26,10 @@
             android:exported="false" />
         <activity
             android:name=".PaginaLoginActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".SelecaoProfissionalActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".ProfissionaisListViewActivity"
             android:exported="true">

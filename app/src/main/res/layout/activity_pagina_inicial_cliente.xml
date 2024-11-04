@@ -133,7 +133,7 @@
         android:id="@+id/bottomNav"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#D7D7D7"
+        android:background="#FEFEFE"
         app:itemIconTint="@color/cor_dos_icones"
         app:itemTextColor="@color/cor_dos_icones"
         app:menu="@menu/bottom_nav" />
