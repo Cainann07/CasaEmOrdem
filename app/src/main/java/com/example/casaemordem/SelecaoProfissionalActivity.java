@@ -25,15 +25,17 @@ public class SelecaoProfissionalActivity extends AppCompatActivity {
     private FirebaseDatabase firebaseDatabase;
     private DatabaseReference databaseReference;
 
+//    String listaPofissionais[] = {"Joaõ", "Marcio", "Pedro", "Maria Luiza"};
+//    int imgProfissionais [] = {R.drawable.imgpedreiro,R.drawable.imgencanador,R.drawable.imgEletricista, R.drawable.imgDomestica };
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_selecao_profissional);
-
         iniciarFireBase();
-
         buscarUsuario();
+        setContentView(R.layout.activity_selecao_profissional);
 
     }
 
