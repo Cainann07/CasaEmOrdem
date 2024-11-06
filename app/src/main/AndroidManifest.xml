@@ -13,6 +13,9 @@
         android:theme="@style/Theme.CasaEmOrdem"
         tools:targetApi="35">
         <activity
+            android:name=".MeusServicosAgendadosProfissionalActivity"
+            android:exported="false" />
+        <activity
             android:name=".PaginaInicialProfissionalActivity"
             android:exported="false" />
         <activity
@@ -22,7 +25,7 @@
             android:name=".MeusServicosPendentesActivity"
             android:exported="false" />
         <activity
-            android:name=".MeusServicosAgendadosActivity"
+            android:name=".MeusServicosAgendadosClienteActivity"
             android:exported="false" />
         <activity
             android:name=".FormaPagamentoActivity"

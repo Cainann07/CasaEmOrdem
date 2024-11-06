@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MeusServicosAgendadosActivity extends AppCompatActivity {
+public class MeusServicosAgendadosClienteActivity extends AppCompatActivity {
 
     private TextView tabAgendados;
     private TextView tabPendentes;
@@ -22,7 +22,7 @@ public class MeusServicosAgendadosActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_meus_servicos_agendados);
+        setContentView(R.layout.activity_meus_servicos_agendados_cliente);
 
         // Inicializa as abas
         tabAgendados = findViewById(R.id.btnAgendados);
