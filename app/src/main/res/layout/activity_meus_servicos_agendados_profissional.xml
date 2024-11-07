@@ -103,7 +103,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout5"
         android:layout_width="300dp"
-        android:layout_height="250dp"
+        android:layout_height="300dp"
         android:layout_marginTop="34dp"
         android:layout_marginBottom="303dp"
         android:background="@drawable/borda_conteiner_constraint_layout"
@@ -113,7 +113,7 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.084">
+        app:layout_constraintVertical_bias="0.0">
 
         <TextView
             android:id="@+id/txtTituloServico"
@@ -133,77 +133,84 @@
 
         <TextView
             android:id="@+id/txtCodigoPedido"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_width="192dp"
+            android:layout_height="29dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="122dp"
-            android:layout_marginBottom="34dp"
             android:fontFamily="@font/lato"
             android:text="Código do pedido: #5E4C29-1"
             android:textColor="#B0BEC5"
-            android:textSize="12sp"
-            app:layout_constraintBottom_toTopOf="@+id/txtDataHoraServico"
+            android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txtTituloServico" />
 
         <TextView
-            android:id="@+id/txtDataHoraServico"
-            android:layout_width="240dp"
-            android:layout_height="20dp"
-            android:layout_marginTop="4dp"
-            android:fontFamily="@font/lato"
-            android:text="Domingo, dia 15 de setembro às 9:00"
-            android:textColor="#FFFFFF"
-            android:textSize="14sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtCodigoPedido" />
-
-        <TextView
-            android:id="@+id/txtNomeProfissional"
+            android:id="@+id/txtDataServico"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="89dp"
-            android:layout_marginBottom="16dp"
+            android:layout_marginTop="192dp"
             android:fontFamily="@font/lato"
-            android:text="Daniela Souza"
-            android:textColor="#FFFFFF"
+            android:text="21/10"
+            android:textColor="#91F2F2F2"
             android:textSize="14sp"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_bias="0.501"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtDataHoraServico" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
             android:id="@+id/imgProfissional"
             android:layout_width="68dp"
             android:layout_height="68dp"
-            android:layout_marginTop="12dp"
-            android:layout_marginBottom="13dp"
-            app:layout_constraintBottom_toTopOf="@+id/txtNomeProfissional"
+            android:layout_marginBottom="24dp"
+            app:layout_constraintBottom_toTopOf="@+id/txtDataServico"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtDataHoraServico"
             app:srcCompat="@drawable/fotodeperfil_generica2" />
 
         <TextView
-            android:id="@+id/txtDiaServico"
+            android:id="@+id/txtNomeProfissional"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="4dp"
             android:fontFamily="@font/lato"
-            android:text="Dia: 21/10"
-            android:textColor="#FEFEFE"
-            app:layout_constraintBottom_toTopOf="@+id/txtNomeProfissional"
+            android:text="Daniela Souza"
+            android:textColor="#F2F2F2"
+            app:layout_constraintBottom_toTopOf="@+id/txtDataServico"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.502"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imgProfissional"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/txtPagamento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="9dp"
+            android:fontFamily="@font/lato"
+            android:text="Pagamento: R$ 130"
+            android:textColor="#91F2F2F2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtDataServico"
             app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/btnAgendarServico"
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#F2B807"
+            android:text="Detalhes"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
