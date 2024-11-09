@@ -59,9 +59,19 @@
             android:exported="true" />
         <activity
             android:name=".CadastroProfissionalActivity"
-            android:exported="true" />
+            android:exported="true" >
+
+         </activity>
+        <activity
+            android:name=".ProfissionalDetalhado"
+            android:exported="true" >
+        </activity>
         <activity
             android:name=".CadastroClienteActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".InfoEnderecoClienteActivity"
             android:exported="false" />
 
         <meta-data
