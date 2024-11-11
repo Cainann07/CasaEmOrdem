@@ -7,17 +7,18 @@
     <string name="camp_Txt_prof">Profissão</string>
 
     //Pedro Alves
-    <string name="pedroAlvesPrudutos">Pedro Alves
-\nVeja
-\nCif
-\nOmo
-\nPinho Sol
-\nMr Musculo</string>
-    <string name="pedroAlvesDesc">Profissional exeperiente na área Elétrica
-\nEletricista Pedrial/Residencial/Industrial
-\nUtilizo os materiais de mais alta qualidade na exeucuções de meus serviços
-\nAtendimento residencial
-\nContatações freelances também são aceitas</string>
+    <string name="pedroAlvesPrudutos">
+•Veja
+\•nCif
+\n•Omo
+\n•Pinho Sol
+\n•Mr Musculo</string>
+    <string name="pedroAlvesDesc">•Profissional exeperiente na área Elétrica
+\n•Eletricista Pedrial/Residencial/Industrial
+\n•Utilizo os materiais de mais alta qualidade na exeucuções de meus serviços
+\n•Atendimento residencial
+\n•Contatações freelances também são aceitas</string>
+
     //maggi
     <string name="maggiIngredients">Maggi Noodles
 \nWater

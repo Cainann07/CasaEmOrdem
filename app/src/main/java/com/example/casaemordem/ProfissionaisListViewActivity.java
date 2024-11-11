@@ -12,7 +12,7 @@ import com.example.casaemordem.databinding.ActivityProfissionaisListViewBinding;
 import java.util.ArrayList;
 
 public class ProfissionaisListViewActivity extends AppCompatActivity {
-//    setContentView(R.layout.activity_profissionais_list_view);
+
     ActivityProfissionaisListViewBinding binding;
     ListAdapter listAdapter;
     ArrayList<ListData> dataArrayList = new ArrayList<>();
@@ -37,7 +37,7 @@ public class ProfissionaisListViewActivity extends AppCompatActivity {
         binding.listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Intent intent = new Intent(ProfissionaisListViewActivity.this, DetailedActivity.class);
+                Intent intent = new Intent(ProfissionaisListViewActivity.this, ProfissionalDetalhado.class);
                 intent.putExtra("name", nameList[i]);
                 intent.putExtra("time", timeList[i]);
                 intent.putExtra("ingredients", ingredientList[i]);
