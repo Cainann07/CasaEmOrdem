@@ -34,6 +34,11 @@ public class PaginaLoginActivity extends AppCompatActivity {
         txtBuscaSenha = findViewById(R.id.idEntrarSenha);
     }
 
+    private void redirectCadastro(){
+        Intent proxPag = new Intent(this, CadastroProfissionalActivity.class);
+        startActivity(proxPag);
+    }
+
     private void iniciarFireBase(){
         firebaseDatabase = FirebaseDatabase.getInstance();
         databaseReference = firebaseDatabase.getReference("usuario");

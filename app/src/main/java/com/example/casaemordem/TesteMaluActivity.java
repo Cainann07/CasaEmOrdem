@@ -8,6 +8,12 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.denzcoskun.imageslider.ImageSlider;
+import com.denzcoskun.imageslider.constants.ScaleTypes;
+import com.denzcoskun.imageslider.models.SlideModel;
+
+import java.util.ArrayList;
+
 public class TesteMaluActivity extends AppCompatActivity {
 
     @Override
@@ -15,10 +21,16 @@ public class TesteMaluActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_teste_malu);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
+
+        ImageSlider imageSlider = findViewById(R.id.imageSlider);
+        ArrayList<SlideModel> slideModels = new ArrayList<>();
+
+        slideModels.add(new SlideModel(R.drawable.diarista2, ScaleTypes.FIT));
+        slideModels.add(new SlideModel(R.drawable.diarista, ScaleTypes.FIT));
+        slideModels.add(new SlideModel(R.drawable.imgeletricista, ScaleTypes.FIT));
+        slideModels.add(new SlideModel(R.drawable.imgdomestica, ScaleTypes.FIT));
+        slideModels.add(new SlideModel(R.drawable.imgmarceneiro, ScaleTypes.FIT));
+
+        imageSlider.setImageList(slideModels, ScaleTypes.FIT);
     }
 }
