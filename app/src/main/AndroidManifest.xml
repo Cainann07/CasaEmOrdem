@@ -41,7 +41,7 @@
             android:exported="false" />
         <activity
             android:name=".PaginaLoginActivity"
-            android:exported="true" >
+            android:exported="true">
 
         </activity>
         <activity
@@ -66,7 +66,7 @@
             android:exported="false" />
         <activity
             android:name=".BottomNav"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -76,9 +76,20 @@
 
         <activity
             android:name=".TesteMaluActivity"
-            android:exported="true" >
+            android:exported="true">
 
         </activity>
+
+        <activity
+            android:name=".ContrataServicoActivity"
+            android:exported="true"/>
+
+        <activity
+            android:name=".InfoEnderecoClienteActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".ConfirmacaoPedidoActivity"
+            android:exported="true"/>
 
         <meta-data
             android:name="preloaded_fonts"

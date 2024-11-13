@@ -88,6 +88,10 @@ public class BottomNav extends AppCompatActivity {
         startActivity(new Intent(this, InfoEnderecoClienteActivity.class));
     }
 
+    public void ContratarServico(View view){
+        startActivity(new Intent(this, ContrataServicoActivity.class));
+    }
+
     public void Slider(){
         ImageSlider imageSlider = findViewById(R.id.imageSlider);
         ArrayList<SlideModel> slideModels = new ArrayList<>();

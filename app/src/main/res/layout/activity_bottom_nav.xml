@@ -128,7 +128,8 @@
             android:textSize="15sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            android:onClick="ContratarServico"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <com.google.android.material.bottomappbar.BottomAppBar
@@ -155,13 +156,17 @@
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="300dp"
         android:backgroundTint="@color/white"
         android:contentDescription="@string/camp_Txt_confirmar_senha"
         android:src="@drawable/ic_add_contratar_servico"
         android:visibility="visible"
+        app:fabSize="auto"
         app:layout_anchor="@+id/bottomAppBar"
         app:layout_anchorGravity="center"
-        app:maxImageSize="40dp"
+        app:maxImageSize="60dp"
+        app:shapeAppearanceOverlay="@style/roundedImageViewRounded"
         app:tint="@color/amareloPadrao"
         tools:ignore="ImageContrastCheck" />
 
