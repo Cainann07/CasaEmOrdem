@@ -14,10 +14,45 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
+    <TextView
+        android:id="@+id/idTexto1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="69dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginBottom="672dp"
+        android:text="Seja bem-vindo!"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/idtexto2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="610dp"
+        android:text="Sugestão de serviço doméstico"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idTexto1" />
+
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="160dp">
+        android:layout_marginTop="140dp">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -34,18 +69,67 @@
             android:layout_height="400dp"
             android:id="@+id/imageSlider"
             app:iss_auto_cycle="true"
-            app:iss_period="1000"
+            app:iss_period="5000"
             app:iss_delay="1000"
             app:iss_corner_radius="20"
-            app:iss_title_background="@drawable/gradient"/>
+            app:iss_title_background="@drawable/gradient">
+
+            <FrameLayout
+                android:id="@+id/frame_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </com.denzcoskun.imageslider.ImageSlider>
 
     </androidx.cardview.widget.CardView>
     </RelativeLayout>
 
-    <FrameLayout
-        android:id="@+id/frame_layout"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="155dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="580dp"
+        android:background="@drawable/borda_conteiner_pag_inicial"
+        android:backgroundTint="#DEDEDE">
+
+        <TextView
+            android:id="@+id/idTexto3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="51dp"
+            android:layout_marginBottom="116dp"
+            android:text="Não Perca essa Opotunidade!"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/idTexto4"
+            android:layout_width="197dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="50dp"
+            android:text="O pedido certo para as suas necessidades do dia-a-dia "
+            android:textColor="#80000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.515"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnAgendarServico"
+            android:layout_width="173dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="15dp"
+            android:backgroundTint="#F2B807"
+            android:text="Agendar serviço"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <com.google.android.material.bottomappbar.BottomAppBar
         android:layout_width="match_parent"
