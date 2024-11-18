@@ -94,7 +94,7 @@
             android:id="@+id/txtPagamento"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="9dp"
+             android:layout_marginBottom="9dp"
             android:fontFamily="@font/lato"
             android:text="Pagamento: R$ 130"
             android:textColor="#91F2F2F2"
