@@ -9,7 +9,7 @@
         android:icon="@drawable/ic_chat"
         android:title="Chat" />
     <item
-        android:id="@+id/fab"
+        android:id="@+id/fab_bottom"
         android:title=""
         android:enabled="false"/>
     <item

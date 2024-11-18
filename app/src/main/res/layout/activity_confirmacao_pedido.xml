@@ -41,8 +41,8 @@
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="221dp"
-        android:layout_height="263dp"
+        android:layout_width="350dp"
+        android:layout_height="380dp"
         android:layout_gravity="center"
         android:layout_margin="16dp"
         android:layout_marginTop="33dp"
@@ -51,32 +51,49 @@
         android:padding="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtConfirmacaoPedido"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintVertical_bias="0.143">
 
         <TextView
             android:id="@+id/txtServico"
-            android:layout_width="184dp"
-            android:layout_height="42dp"
-            android:text="Serviço: Limpeza padrão"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:text="Serviço:"
             android:textColor="#000000"
-            android:textSize="16sp"
+            android:textSize="24sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="23dp"
+            android:text="Limpeza padrão"
+            android:textColor="#F2B807"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/txtPergunta"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtServico" />
 
         <TextView
             android:id="@+id/txtPergunta"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="60dp"
             android:text="&quot;Quem irá me atender?&quot;"
             android:textColor="#000000"
-            android:textSize="14sp"
+            android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
@@ -85,16 +102,15 @@
 
         <TextView
             android:id="@+id/txtDetalhes"
-            android:layout_width="184dp"
+            android:layout_width="270dp"
             android:layout_height="89dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="24dp"
             android:justificationMode="inter_word"
-            android:text=" Você será atendido por um Profissional Autônomo, devidamente credenciado na Casa em Ordem e bem avaliado por outros clientes."
+            android:text="Você será atendido por um Profissional Autônomo, devidamente credenciado na Casa em Ordem e bem avaliado por outros clientes."
             android:textAlignment="textStart"
             android:textColor="#000000"
-            android:textSize="14sp"
+            android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.428"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/txtPergunta" />
 
@@ -102,14 +118,18 @@
             android:id="@+id/txtValor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="52dp"
-            android:layout_marginTop="28dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="48dp"
             android:text="Valor total: "
             android:textColor="#000000"
-            android:textSize="16sp"
+            android:textSize="24sp"
             android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/txtDetalhes" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -117,16 +137,15 @@
         android:id="@+id/idEnderecoBotaoAvancar"
         android:layout_width="150dp"
         android:layout_height="49dp"
-        android:layout_marginBottom="216dp"
+        android:layout_marginBottom="136dp"
         android:backgroundTint="#F2B807"
+        android:onClick="PaginaInicial"
         android:text="Voltar ao menu"
         android:textColor="#f2f2f2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        android:onClick="PaginaInicial" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

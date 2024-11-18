@@ -6,9 +6,6 @@ import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 public class ConfirmacaoPedidoActivity extends AppCompatActivity {
 
@@ -20,7 +17,7 @@ public class ConfirmacaoPedidoActivity extends AppCompatActivity {
     }
 
     public void PaginaInicial(View view){
-        startActivity(new Intent(this, BottomNav.class));
+        startActivity(new Intent(this, PaginaInicialClienteActivity.class));
     }
 
 }
