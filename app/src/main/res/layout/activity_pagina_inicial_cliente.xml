@@ -168,7 +168,8 @@
         app:maxImageSize="40dp"
         app:shapeAppearanceOverlay="@style/roundedImageViewRounded"
         app:tint="@color/amareloPadrao"
-        tools:ignore="ImageContrastCheck" />
+        tools:ignore="ImageContrastCheck"
+        android:paddingTop="60dp"/>
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

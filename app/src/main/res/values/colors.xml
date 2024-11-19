@@ -10,5 +10,6 @@
     <color name="lavender">#8692f7</color>
     <color name="amareloPadrao">#F2B807</color>
     <color name="cinza">#888888</color>
+    <color name="cinzaPadrao">#575757</color>
 
 </resources>

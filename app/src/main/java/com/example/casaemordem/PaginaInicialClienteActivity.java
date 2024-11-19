@@ -35,7 +35,7 @@ public class PaginaInicialClienteActivity extends AppCompatActivity {
             }else if (item.getItemId() == R.id.fab_bottom) {
                 startActivity(new Intent(this, ContrataServicoActivity.class));
             }else if (item.getItemId() == R.id.btnMenuCalendario) {
-                startActivity(new Intent(this, InfoEnderecoClienteActivity.class));
+                startActivity(new Intent(this, CalendarioActivity.class));
             }else if (item.getItemId() == R.id.btnMenuUsuario) {
                 startActivity(new Intent(this, InfoEnderecoClienteActivity.class));
             }

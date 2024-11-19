@@ -13,6 +13,9 @@
         android:theme="@style/Theme.CasaEmOrdem"
         tools:targetApi="35">
         <activity
+            android:name=".CalendarioActivity"
+            android:exported="false" />
+        <activity
             android:name=".ServicoAgendadoProfissionalActivity"
             android:exported="false" />
         <activity
@@ -41,16 +44,13 @@
             android:exported="false" />
         <activity
             android:name=".PaginaLoginActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".SelecaoProfissionalActivity"
             android:exported="true" />
         <activity
             android:name=".ProfissionaisListViewActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".CadastroProfissionalActivity"
             android:exported="true" />
@@ -63,22 +63,26 @@
         <activity
             android:name=".PaginaInicialClienteActivity"
             android:exported="true">
+        </activity>
+        <activity
+            android:name=".ContrataServicoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".InfoEnderecoClienteActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ConfirmacaoPedidoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SplashInicialActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".ContrataServicoActivity"
-            android:exported="true"/>
 
-        <activity
-            android:name=".InfoEnderecoClienteActivity"
-            android:exported="true"/>
-        <activity
-            android:name=".ConfirmacaoPedidoActivity"
-            android:exported="true"/>
 
         <meta-data
             android:name="preloaded_fonts"

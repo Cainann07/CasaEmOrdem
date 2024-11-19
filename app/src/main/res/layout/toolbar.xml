@@ -5,7 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:backgroundTint="#575757"
+    android:backgroundTint="@color/cinzaPadrao"
     android:background="@drawable/inferior_arredondada"
     android:padding="7dp">
 
@@ -14,14 +14,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:src="@drawable/baseline_arrow_back_24" />
+        android:src="@drawable/baseline_arrow_back_24"
+        android:onClick="PaginaInicial"/>
 
     <ImageView
         android:id="@+id/icone_logo"
         android:layout_width="70dp"
         android:layout_height="50dp"
         android:layout_centerHorizontal="true"
-        app:srcCompat="@drawable/casa_em_ordem_logo_photoroom_branco_superior" />
+        app:srcCompat="@drawable/casa_em_ordem_logo_photoroom_branco_superior"
+        android:onClick="PaginaInicial"/>
 
     <ImageView
         android:id="@+id/icone_menu"
