@@ -45,6 +45,7 @@
             android:paddingLeft="15dp"
             android:textAlignment="textStart"
             android:textSize="12sp" />
+
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
