@@ -10,14 +10,13 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class ContrataServicoActivity extends AppCompatActivity {
+public class ContatarServicoActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_contrata_servico);
-
+        setContentView(R.layout.activity_contatar_servico);
     }
 
     public void SelecionarProf(View view){
