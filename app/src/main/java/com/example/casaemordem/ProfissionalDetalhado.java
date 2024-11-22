@@ -19,8 +19,8 @@ public class ProfissionalDetalhado extends AppCompatActivity {
         if (intent != null){
             String name = intent.getStringExtra("name");
             String time = intent.getStringExtra("time");
-            int ingredients = intent.getIntExtra("ingredients", R.string.maggiIngredients);
-            int desc = intent.getIntExtra("desc", R.string.maggieDesc);
+            int ingredients = intent.getIntExtra("ingredients", R.string.mariaLuizaProdutos);
+            int desc = intent.getIntExtra("desc", R.string.mariaLuizaDesc);
             int image = intent.getIntExtra("image", R.drawable.imgeletricista);
             binding.detailName.setText(name);
             binding.detailTime.setText(time);
