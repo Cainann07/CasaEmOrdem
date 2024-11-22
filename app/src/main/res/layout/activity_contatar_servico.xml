@@ -77,7 +77,8 @@
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="85dp"
-                        android:layout_height="66dp">
+                        android:layout_height="66dp"
+                        android:onClick="funcionalidadeEscolhida">
 
                         <ImageView
                             android:id="@+id/icone_limpeza"
@@ -124,7 +125,8 @@
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="85dp"
-                        android:layout_height="66dp">
+                        android:layout_height="66dp"
+                        android:onClick="funcionalidadeEscolhida">
 
                         <ImageView
                             android:id="@+id/icone_eletricista"
@@ -169,7 +171,8 @@
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="85dp"
-                        android:layout_height="66dp">
+                        android:layout_height="66dp"
+                        android:onClick="funcionalidadeEscolhida">
 
                         <ImageView
                             android:id="@+id/icone_encanador"
@@ -325,7 +328,9 @@
                     android:hint="Comodos"
                     android:paddingLeft="15dp"
                     android:textAlignment="textStart"
-                    android:textSize="12sp" />
+                    android:textSize="12sp"
+                    android:maxLength="5"
+                    android:digits="0123456789"/>
             </com.google.android.material.textfield.TextInputLayout>
 
             <TextView

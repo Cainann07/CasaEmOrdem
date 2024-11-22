@@ -33,7 +33,7 @@ public class PaginaInicialClienteActivity extends AppCompatActivity {
             } else if (item.getItemId() == R.id.btnMenuChat) {
                 startActivity(new Intent(this, InfoEnderecoClienteActivity.class));
             }else if (item.getItemId() == R.id.fab_bottom) {
-                startActivity(new Intent(this, ContrataServicoActivity.class));
+                startActivity(new Intent(this, ContatarServicoActivity.class));
             }else if (item.getItemId() == R.id.btnMenuCalendario) {
                 startActivity(new Intent(this, CalendarioActivity.class));
             }else if (item.getItemId() == R.id.btnMenuUsuario) {
@@ -49,7 +49,7 @@ public class PaginaInicialClienteActivity extends AppCompatActivity {
     }
 
     public void ContratarServico(View view) {
-        startActivity(new Intent(this, ContrataServicoActivity.class));
+        startActivity(new Intent(this, ContatarServicoActivity.class));
     }
 
     public void Slider() {

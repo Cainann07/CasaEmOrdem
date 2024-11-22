@@ -18,7 +18,7 @@ public class SplashInicialActivity extends AppCompatActivity {
             new Handler().postDelayed(new Runnable() {
                 @Override
                 public void run() {
-                    Intent intent = new Intent(SplashInicialActivity.this, PaginaInicialClienteActivity.class);
+                    Intent intent = new Intent(SplashInicialActivity.this, PaginaLoginActivity.class);
                     startActivity(intent);
                     finish();
                 }
