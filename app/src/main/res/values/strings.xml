@@ -14,66 +14,86 @@
 \n•Pinho Sol
 \n•Mr Musculo</string>
     <string name="pedroAlvesDesc">
-  •Profissional exeperiente na área Elétrica
+  •Profissional experiente na área Elétrica
 \n•Eletricista Pedrial/Residencial/Industrial
-\n•Utilizo os materiais de mais alta qualidade na exeucuções de meus serviços
+\n•Utilizo os materiais de mais alta qualidade na execuções de meus serviços
 \n•Atendimento residencial
-\n•Contatações freelances também são aceitas</string>
+\n•Contratações freelances também são aceitas</string>
 
-    //maggi
-    <string name="maggiIngredients">Maggi Noodles
-\nWater
-\nMaggi Masala</string>
-    <string name="maggieDesc">Add one and half cup of water
-\nAdd maggi noodles and boil it
-\nAdd the maggi masala on to it
-\nWait for 2 mins
-\nMaggi is ready!</string>
-    //cake
-    <string name="cakeIngredients">Maggi Noodles
-\nWater
-\nMaggi Masala</string>
-    <string name="cakeDesc">Add one and half cup of water
-Add maggi noodles and boil it
-Add the maggi masala on to it
-\nWait for 2 mins
-\nMaggi is ready!</string>
-    //pancake
-    <string name="pancakeIngredients">Maggi Noodles
-\nWater
-\nMaggi Masala</string>
-    <string name="pancakeDesc">Add one and half cup of water
-Add maggi noodles and boil it
-Add the maggi masala on to it
-\nWait for 2 mins
-\nMaggi is ready!</string>
-    //pizza
-    <string name="pizzaIngredients">Maggi Noodles
-\nWater
-\nMaggi Masala</string>
-    <string name="pizzaDesc">Add one and half cup of water
-Add maggi noodles and boil it
-Add the maggi masala on to it
-\nWait for 2 mins
-\nMaggi is ready!</string>
-    //burgers
-    <string name="burgerIngredients">Maggi Noodles
-\nWater
-\nMaggi Masala</string>
-    <string name="burgerDesc">Add one and half cup of water
-\nAdd maggi noodles and boil it
-\nAdd the maggi masala on to it
-\nWait for 2 mins
-\nMaggi is ready!</string>
-    //fries
-    <string name="friesIngredients">Maggi Noodles
-\nWater
-\nMaggi Masala</string>
-    <string name="friesDesc">Add one and half cup of water
-\nAdd maggi noodles and boil it
-\nAdd the maggi masala on to it
-\nWait for 2 mins
-\nMaggi is ready!</string>
+    //Maria Luiza
+    <string name="mariaLuizaProdutos">
+•Veja
+\n•nCif
+\n•Diabo Verde
+\n•Omo
+\n•Pinho Sol
+\n•Mr Musculo</string>
+    <string name="mariaLuizaDesc">
+  •Profissional experiente na área de Limpeza
+\n•Faxineira residencial
+\n•Materiais de limpeza de alta qualidade e de alta potência
+\n•Serviço somente de limpeza, passar roupa pode ser negociado</string>
+
+    //Matheus
+    <string name="matheusProdutos">
+•Tubos
+\n•Válvulas
+\n•Torneiras
+\n•Vedantes e Selantes
+\n•Ferramentas Pessoais</string>
+    <string name="matheusDesc">
+  •Profissional experiente na área de Hidráulica
+\n•Serviço de hidráulica residencial e industrial
+\n•Drenagem eficientes, sem problemas de entupimento
+\n•Produtos de qualidade para controle de fluxo de água, com modelos de alta durabilidade.</string>
+
+    //Eric Gomes
+    <string name="ericGomesProdutos">
+•Fios
+\n•Cabos
+\n•Interruptores e Tomadas
+\n•Caixas de Passagem</string>
+    <string name="ericGomesDesc">
+ •Profissional experiente na área Elétrica
+\n•Serviço residencial
+\n•Equipamentos de segurança para evitar sobrecargas e curto-circuitos
+\n•Aferir a resistência elétrica e garantir que os circuitos estejam funcionando corretamente.</string>
+
+    //Warlison
+    <string name="warlisonProdutos">
+•Lâmpadas e Luminárias
+\n•Fios e Cabos
+\n•Caixas de Passagem
+\n•Interruptores e Tomadas</string>
+    <string name="warlisonDesc">
+ •Profissional experiente na área Elétrica
+\n•Serviço residencial
+\n•Produtos eficientes para instalação e reposição de iluminação em residências e empresas.
+\n•Diferentes bitolas e materiais para garantir a instalação segura e eficiente.</string>
+
+    //Bruno Vieira
+    <string name="brunoVieiraProdutos">
+•Detergentes
+\n•Sabões
+\n•Limpa Vidro
+\n•Vassouras, rodos e panos
+\n•Aspirador</string>
+    <string name="brunoVieiraDesc">
+•Profissional experiente na área de limpeza de Escritórios
+\n•Serviço de escritórios e salas comerciais.
+\n•Limpeza detalhada de superfícies, sem riscos de danos.
+\n•Limpeza geral de superfícies, utensílios, móveis e pisos.</string>
+
+    //David
+    <string name="DavidProdutos">
+•Fios e Cabos
+\n•Interruptores e Tomadas
+\n•Multímetros e Testadores</string>
+    <string name="davidDesc">
+•Profissional experiente na área Elétrica
+\n•Instalação de Circuitos Elétricos: Criação e instalação de sistemas elétricos completos para residências e empresas.
+\n•Instalação de Tomadas e Interruptores: Colocação de novos pontos de energia e controle de luz em qualquer ambiente.
+\n•Reparo e Substituição de Fios e Cabos: Reparos em circuitos elétricos danificados, trocas de fios e cabos antigos.</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 

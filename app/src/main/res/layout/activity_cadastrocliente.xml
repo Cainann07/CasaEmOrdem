@@ -34,8 +34,7 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent">
 
-
-        <com.google.android.material.textfield.TextInputEditText
+        <EditText
             android:id="@+id/idCadastroProfissao"
             android:layout_width="match_parent"
             android:layout_height="50dp"
@@ -46,6 +45,7 @@
             android:paddingLeft="15dp"
             android:textAlignment="textStart"
             android:textSize="12sp" />
+
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
@@ -294,6 +294,8 @@
             android:layout_height="wrap_content"
             android:text="Feminino" />
     </RadioGroup>
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

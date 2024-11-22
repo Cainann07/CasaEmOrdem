@@ -81,7 +81,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textInputEmail"
         app:layout_constraintVertical_bias="0.0">
 
-        <com.google.android.material.textfield.TextInputEditText
+        <EditText
             android:id="@+id/idEntrarSenha"
             android:layout_width="match_parent"
             android:layout_height="50dp"
@@ -89,10 +89,8 @@
             android:elevation="3dp"
             android:fontFamily="@font/lato"
             android:hint="Senha..."
-            android:textSize="12sp"
             android:paddingLeft="15dp"
-
-            />
+            android:textSize="12sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
@@ -138,10 +136,11 @@
     <TextView
         android:id="@+id/idNaoTemConta"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="49dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="30dp"
+        android:onClick="redirectCadastro"
         android:text="Não tem uma conta?"
         android:textColor="@color/black"
         android:textSize="14sp"
@@ -150,8 +149,7 @@
         app:layout_constraintHorizontal_bias="0.518"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/idBotaoLogin"
-        app:layout_constraintVertical_bias="0.53"
-        android:onClick="redirectCadastro"/>
+        app:layout_constraintVertical_bias="0.664" />
 
     <TextView
         android:id="@+id/idCadastrar"
@@ -168,5 +166,6 @@
         app:layout_constraintHorizontal_bias="0.376"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.957" />
+        app:layout_constraintVertical_bias="0.917" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
