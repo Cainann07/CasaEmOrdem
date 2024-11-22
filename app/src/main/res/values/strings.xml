@@ -8,14 +8,14 @@
 
     //Pedro Alves
     <string name="pedroAlvesPrudutos">
-•Veja
-\n•nCif
-\n•Omo
-\n•Pinho Sol
-\n•Mr Musculo</string>
+•Cabos Elétricos de Alta Capacidade (Genreral Cable, Eletroflex)
+\n•Disjuntores e Fusíveis (Eaton, Siemens, WEG)
+\n•Tomadas e Interruptores (Oda, Kanoo, Tampico)
+\n•Transformadores e Redutores de Tensão (WEG, ABB, CEMIG)
+\n•Cabos de Controle(Mendel, Eletroflex, Siemens)</string>
     <string name="pedroAlvesDesc">
   •Profissional experiente na área Elétrica
-\n•Eletricista Pedrial/Residencial/Industrial
+\n•Eletricista Predial/Residencial/Industrial
 \n•Utilizo os materiais de mais alta qualidade na execuções de meus serviços
 \n•Atendimento residencial
 \n•Contratações freelances também são aceitas</string>
@@ -36,10 +36,10 @@
 
     //Matheus
     <string name="matheusProdutos">
-•Tubos
-\n•Válvulas
-\n•Torneiras
-\n•Vedantes e Selantes
+•Tubos (Amanco e Tigre)
+\n•Válvulas (IMI)
+\n•Torneiras (Deca, Atlas e Lorenzetti)
+\n•Vedantes e Selantes(Sika e 3M)
 \n•Ferramentas Pessoais</string>
     <string name="matheusDesc">
   •Profissional experiente na área de Hidráulica
@@ -49,10 +49,10 @@
 
     //Eric Gomes
     <string name="ericGomesProdutos">
-•Fios
-\n•Cabos
-\n•Interruptores e Tomadas
-\n•Caixas de Passagem</string>
+•Fios (Mendel)
+\n•Cabos (Mendel)
+\n•Interruptores e Tomadas (Intelbras)
+\n•Caixas de Passagem(Ducab)</string>
     <string name="ericGomesDesc">
  •Profissional experiente na área Elétrica
 \n•Serviço residencial
@@ -62,9 +62,9 @@
     //Warlison
     <string name="warlisonProdutos">
 •Lâmpadas e Luminárias
-\n•Fios e Cabos
-\n•Caixas de Passagem
-\n•Interruptores e Tomadas</string>
+\n•Fios e Cabos (Mendel, Multilaser, Eletroflex)
+\n•Caixas de Passagem (Plasbil, Ducab)
+\n•Interruptores e Tomadas (Tampico, Togrill, Intelbras))</string>
     <string name="warlisonDesc">
  •Profissional experiente na área Elétrica
 \n•Serviço residencial
@@ -73,9 +73,9 @@
 
     //Bruno Vieira
     <string name="brunoVieiraProdutos">
-•Detergentes
-\n•Sabões
-\n•Limpa Vidro
+•Detergentes (Ypê)
+\n•Sabões (Ypê)
+\n•Limpa Vidro (Veja)
 \n•Vassouras, rodos e panos
 \n•Aspirador</string>
     <string name="brunoVieiraDesc">
@@ -86,8 +86,8 @@
 
     //David
     <string name="DavidProdutos">
-•Fios e Cabos
-\n•Interruptores e Tomadas
+•Fios e Cabos (Gerdau, Mennekes, Eletroflex)
+\n•Interruptores e Tomadas (Intelbras, Togrill)
 \n•Multímetros e Testadores</string>
     <string name="davidDesc">
 •Profissional experiente na área Elétrica
