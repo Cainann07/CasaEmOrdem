@@ -117,6 +117,7 @@
             android:fontFamily="@font/lato"
             android:gravity="center"
             android:padding="16dp"
+            android:onClick="redirectMeusServicosPendentesProfissional"
             android:text="Pendentes"
             android:textColor="#000000" />
 
@@ -129,6 +130,7 @@
             android:fontFamily="@font/lato"
             android:gravity="center"
             android:padding="16dp"
+            android:onClick="redirectMeusServicosHistoricoProfissional"
             android:text="Histórico"
             android:textColor="#000000" />
 

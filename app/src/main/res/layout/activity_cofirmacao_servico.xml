@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CofirmacaoServicoActivity">
+
+  <include
+      android:id="@+id/include"
+      layout="@layout/toolbar"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" />
+
+  <ImageView
+      android:id="@+id/imageView3"
+      android:layout_width="70dp"
+      android:layout_height="58dp"
+      android:layout_marginTop="112dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:srcCompat="@drawable/baseline_check_circle_24" />
+
+  <TextView
+      android:id="@+id/txtConfirmacaoPedido"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="23dp"
+      android:layout_marginBottom="679dp"
+      android:text="Pedido realizado com sucesso!"
+      android:textColor="#000000"
+      android:textSize="16sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="350dp"
+      android:layout_height="380dp"
+      android:layout_gravity="center"
+      android:layout_margin="16dp"
+      android:layout_marginTop="33dp"
+      android:background="@drawable/borda_conteiner_constraint_layout"
+      android:elevation="4dp"
+      android:padding="16dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.491"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/txtConfirmacaoPedido"
+      app:layout_constraintVertical_bias="0.143">
+
+    <TextView
+        android:id="@+id/txtServico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Serviço:"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="23dp"
+        android:text="Limpeza padrão"
+        android:textColor="#F2B807"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txtPergunta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtServico" />
+
+    <TextView
+        android:id="@+id/txtPergunta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="&quot;“Quando terei que realizar o serviço?”&quot;"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtServico" />
+
+    <TextView
+        android:id="@+id/txtDetalhes"
+        android:layout_width="270dp"
+        android:layout_height="89dp"
+        android:layout_marginTop="24dp"
+        android:justificationMode="inter_word"
+        android:text="No botão abaixo você poderá conversar com o cliente, podendo confimar todas as informações nas quais deseja."
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtPergunta" />
+
+    <TextView
+        android:id="@+id/txtValor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="48dp"
+        android:text="Valor total: R$ 130,00"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtDetalhes" />
+
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+  <Button
+      android:id="@+id/idEnderecoBotaoAvancar"
+      android:layout_width="150dp"
+      android:layout_height="49dp"
+      android:layout_marginBottom="136dp"
+      android:backgroundTint="#F2B807"
+      android:onClick="PaginaInicial"
+      android:text="Voltar ao menu"
+      android:textColor="#f2f2f2"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.498"
+      app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

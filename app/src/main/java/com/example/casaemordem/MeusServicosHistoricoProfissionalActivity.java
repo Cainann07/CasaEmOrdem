@@ -1,5 +1,6 @@
 package com.example.casaemordem;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
@@ -20,5 +21,20 @@ public class MeusServicosHistoricoProfissionalActivity extends AppCompatActivity
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+    }
+
+    private void redirectMeusServicosPendentesProfissional(){
+        Intent proxPag = new Intent(this, MeusServicosPendentesProfissionalActivity.class);
+        startActivity(proxPag);
+    }
+
+    private void redirectMeusServicosAgendadosProfissional(){
+        Intent proxPag = new Intent(this, MeusServicosAgendadosProfissionalActivity.class);
+        startActivity(proxPag);
+    }
+
+    private void redirectDetalhesServicoProfissional(){
+        Intent proxPag = new Intent(this, DetalhesServicoProfissionalActivity.class);
+        startActivity(proxPag);
     }
 }

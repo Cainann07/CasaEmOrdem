@@ -194,15 +194,18 @@
         android:id="@+id/btnAceitarServico"
         android:layout_width="114dp"
         android:layout_height="48dp"
+        android:layout_marginTop="14dp"
         android:layout_marginRight="70dp"
         android:layout_marginBottom="116dp"
         android:backgroundTint="#F2B807"
+        android:onClick="redirectConfirmacaoPedido"
         android:text="Aceitar"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.37"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
 
     <Button
         android:id="@+id/btnRecusarServico"
@@ -211,6 +214,7 @@
         android:layout_marginLeft="70dp"
         android:layout_marginBottom="116dp"
         android:backgroundTint="#000000"
+        android:onClick="redirectPaginaInicialProfissional"
         android:text="Recusar"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"

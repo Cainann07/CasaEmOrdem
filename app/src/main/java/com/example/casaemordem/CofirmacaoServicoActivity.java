@@ -1,6 +1,5 @@
 package com.example.casaemordem;
 
-import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
@@ -9,13 +8,13 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class DetalhesServicoProfissionalActivity extends AppCompatActivity {
+public class CofirmacaoServicoActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_detalhes_servico_profissional);
+        setContentView(R.layout.activity_cofirmacao_servico);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
@@ -23,14 +22,5 @@ public class DetalhesServicoProfissionalActivity extends AppCompatActivity {
         });
     }
 
-    private void redirectConfirmacaoPedido(){
-        Intent proxPag = new Intent(this, ConfirmacaoPedidoActivity.class);
-        startActivity(proxPag);
-    }
-
-    private void redirectPaginaInicialProfissional(){
-        Intent proxPag = new Intent(this, PaginaInicialProfissionalActivity.class);
-        startActivity(proxPag);
-    }
 
 }
