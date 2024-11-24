@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ChatClienteActivity">
+    tools:context=".ChatProfissionalActivity">
 
     <include
         android:id="@+id/include"
@@ -30,11 +30,11 @@
 
         <TextView
             android:id="@+id/tvNameStatus"
-            android:layout_width="109dp"
+            android:layout_width="120dp"
             android:layout_height="20dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
-            android:text="Maria - Diarista"
+            android:text="Mateus - Cliente"
             android:textColor="@android:color/black"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -50,7 +50,7 @@
             android:src="@drawable/baseline_circle_24"
             app:layout_constraintBottom_toBottomOf="@+id/tvDate"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.541"
+            app:layout_constraintHorizontal_bias="0.567"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.393" />
@@ -88,7 +88,7 @@
             android:text="Online"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.448"
+            app:layout_constraintHorizontal_bias="0.475"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.514" />
