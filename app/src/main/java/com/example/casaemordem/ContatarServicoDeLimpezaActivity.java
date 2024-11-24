@@ -64,6 +64,5 @@ public class ContatarServicoDeLimpezaActivity extends AppCompatActivity {
             Toast.makeText(this, "Infelizmente Ocorreu um erro tente novamente.\nErro" + ex , Toast.LENGTH_SHORT).show();
         }
 
-
     }
 }
