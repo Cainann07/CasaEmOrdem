@@ -13,7 +13,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/main"
             android:layout_width="match_parent"
-            android:layout_height="881dp"
+            android:layout_height="1000dp"
             tools:context=".ContratarServicoActivity">
 
             <include
@@ -26,7 +26,6 @@
                 android:id="@+id/idTxt1_contrataServico"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="84dp"
                 android:layout_marginBottom="770dp"
                 android:text="Contratar Serviço"
                 android:textColor="#000000"
@@ -41,7 +40,7 @@
                 android:id="@+id/txtEnderecoServico"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="134dp"
+                android:layout_marginTop="15dp"
                 android:layout_marginBottom="725dp"
                 android:text="Endereço do serviço"
                 android:textColor="#000000"
@@ -57,7 +56,7 @@
                 android:id="@+id/constraintLayout6"
                 android:layout_width="299dp"
                 android:layout_height="70dp"
-                android:layout_marginTop="188dp"
+                android:layout_marginTop="60dp"
                 android:layout_marginBottom="623dp"
                 android:background="#d7d7d7"
                 android:visibility="visible"
@@ -106,15 +105,14 @@
                 android:layout_width="100dp"
                 android:layout_height="70dp"
                 android:layout_marginStart="53dp"
-                android:layout_marginTop="288dp"
                 android:layout_marginEnd="258dp"
-                android:layout_marginBottom="523dp"
+                android:layout_marginBottom="656dp"
                 android:background="#d7d7d7"
                 android:visibility="visible"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent">
 
                 <EditText
                     android:id="@+id/editTextNumeroEndereco"
@@ -152,7 +150,7 @@
                 android:layout_width="180dp"
                 android:layout_height="70dp"
                 android:layout_marginStart="177dp"
-                android:layout_marginTop="288dp"
+                android:layout_marginTop="140dp"
                 android:layout_marginEnd="54dp"
                 android:layout_marginBottom="523dp"
                 android:background="#d7d7d7"
@@ -180,7 +178,7 @@
                     android:id="@+id/editTextComplemento"
                     android:layout_width="wrap_content"
                     android:layout_height="48dp"
-                    android:layout_marginTop="53dp"
+                    android:layout_marginTop="140dp"
                     android:layout_marginBottom="2dp"
                     android:ems="10"
                     android:inputType="text"
@@ -198,15 +196,16 @@
                 android:id="@+id/constraintLayout4"
                 android:layout_width="299dp"
                 android:layout_height="70dp"
-                android:layout_marginTop="387dp"
+                android:layout_marginTop="360dp"
                 android:layout_marginBottom="424dp"
                 android:background="#d7d7d7"
                 android:visibility="visible"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_bias="0.508"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
 
 
                 <TextView
@@ -242,32 +241,112 @@
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputHorário"
+                android:layout_width="237dp"
+                android:layout_height="65dp"
+                android:layout_marginTop="490dp"
+                android:layout_marginBottom="281dp"
+                android:elevation="10dp"
+                android:padding="3dp"
+                app:boxBackgroundColor="#D9D9D9"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.494"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/idHorario"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/bordasnoinput"
+                    android:elevation="3dp"
+                    android:fontFamily="@font/lato"
+                    android:hint="Horário..."
+                    android:paddingLeft="15dp"
+                    android:textAlignment="textStart"
+                    android:textSize="12sp"
+                    tools:layout_editor_absoluteX="61dp"
+                    tools:layout_editor_absoluteY="439dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputNumeroCliente"
+                android:layout_width="235dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="560dp"
+                android:layout_marginBottom="191dp"
+                android:elevation="10dp"
+                android:padding="3dp"
+                app:boxBackgroundColor="#D9D9D9"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.505"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/idNumeroCliente"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/bordasnoinput"
+                    android:elevation="3dp"
+                    android:fontFamily="@font/lato"
+                    android:hint="Número de telefone..."
+                    android:paddingLeft="15dp"
+                    android:textAlignment="textStart"
+                    android:textSize="12sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/label_horario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="450dp"
+                android:layout_marginBottom="368dp"
+                android:text="Informe um horário:"
+                android:textColor="#000000"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
             <TextView
                 android:id="@+id/idTxt_escolherServico"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="733dp"
+                android:layout_marginTop="640dp"
                 android:layout_marginBottom="126dp"
                 android:text="Escolha um tipo de serviço"
                 android:textColor="#000000"
                 android:textSize="16sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_bias="0.49"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/constraintLayout"
                 android:layout_width="316dp"
                 android:layout_height="83dp"
-                android:layout_marginTop="782dp"
+                android:layout_marginTop="680dp"
                 android:layout_marginBottom="16dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_bias="0.494"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cardView2"
@@ -409,81 +488,52 @@
                 </androidx.cardview.widget.CardView>
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/textInputHorário"
-                android:layout_width="237dp"
-                android:layout_height="65dp"
-                android:layout_marginTop="535dp"
-                android:layout_marginBottom="281dp"
-                android:elevation="10dp"
-                android:padding="3dp"
-                app:boxBackgroundColor="#D9D9D9"
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout9"
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="53dp"
+                android:layout_marginTop="700dp"
+                android:layout_marginEnd="58dp"
+                android:layout_marginBottom="56dp"
+                android:background="#d7d7d7"
+                android:visibility="visible"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
+                <EditText
+                    android:id="@+id/editTextQtdComodos"
+                    android:layout_width="300dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="53dp"
+                    android:layout_marginBottom="2dp"
+                    android:ems="10"
+                    android:inputType="number"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.86" />
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/idHorario"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:background="@drawable/bordasnoinput"
-                    android:elevation="3dp"
-                    android:fontFamily="@font/lato"
-                    android:hint="Horário..."
-                    android:paddingLeft="15dp"
-                    android:textAlignment="textStart"
-                    android:textSize="12sp"
-                    tools:layout_editor_absoluteX="61dp"
-                    tools:layout_editor_absoluteY="439dp" />
+                <TextView
+                    android:id="@+id/idLabelQtdComodos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:labelFor="@id/editTextNumeroEndereco"
+                    android:text="Quadidade de Comodos"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.021" />
 
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/textInputNumeroCliente"
-                android:layout_width="235dp"
-                android:layout_height="60dp"
-                android:layout_marginTop="630dp"
-                android:layout_marginBottom="191dp"
-                android:elevation="10dp"
-                android:padding="3dp"
-                app:boxBackgroundColor="#D9D9D9"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
-
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/idNumeroCliente"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:background="@drawable/bordasnoinput"
-                    android:elevation="3dp"
-                    android:fontFamily="@font/lato"
-                    android:hint="Número de telefone..."
-                    android:paddingLeft="15dp"
-                    android:textAlignment="textStart"
-                    android:textSize="12sp" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <TextView
-                android:id="@+id/label_horario"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="494dp"
-                android:layout_marginBottom="368dp"
-                android:text="Informe um horário:"
-                android:textColor="#000000"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </LinearLayout>
