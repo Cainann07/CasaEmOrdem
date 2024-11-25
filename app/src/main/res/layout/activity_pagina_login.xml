@@ -15,6 +15,7 @@
         android:layout_marginBottom="223dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
@@ -33,6 +34,7 @@
         app:boxBackgroundColor="#D9D9D9"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ImgLogo">
 
@@ -45,9 +47,9 @@
             android:elevation="3dp"
             android:fontFamily="@font/lato"
             android:hint="E-mail..."
+            android:paddingLeft="15dp"
             android:textAlignment="textStart"
-            android:textSize="12sp"
-            android:paddingLeft="15dp"/>
+            android:textSize="12sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
@@ -75,9 +77,9 @@
         android:padding="3dp"
         app:boxBackgroundColor="#D9D9D9"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/textInputEmail"
-        app:layout_constraintHorizontal_bias="0.4"
-        app:layout_constraintStart_toStartOf="@+id/textInputEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputEmail"
         app:layout_constraintVertical_bias="0.0">
 
@@ -89,6 +91,7 @@
             android:elevation="3dp"
             android:fontFamily="@font/lato"
             android:hint="Senha..."
+            android:inputType="textPassword"
             android:paddingLeft="15dp"
             android:textSize="12sp" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -111,7 +114,7 @@
         android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputSenha"
         app:layout_constraintVertical_bias="0.006" />
@@ -128,7 +131,7 @@
         android:textColor="#f2f2f2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/idEsqueceuSenha"
         app:layout_constraintVertical_bias="0.042" />
@@ -146,7 +149,7 @@
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/idBotaoLogin"
         app:layout_constraintVertical_bias="0.664" />
@@ -155,7 +158,9 @@
         android:id="@+id/idCadastrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
+        android:layout_marginStart="143dp"
+        android:layout_marginEnd="164dp"
+        android:layout_marginBottom="55dp"
         android:fontFamily="@font/lato"
         android:text="Cadastre-se aqui"
         android:textColor="@color/black"
@@ -163,9 +168,7 @@
         android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.376"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.917" />
+        app:layout_constraintTop_toBottomOf="@+id/idNaoTemConta" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

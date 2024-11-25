@@ -77,7 +77,7 @@ public class ContatarServicoDeLimpezaActivity extends AppCompatActivity {
                     UUID.randomUUID().toString(), txtLocalEndereco.getText().toString(), txtNumeroEndereco.getText().toString(), txtComplemento.getText().toString()
                     , txtReferencia.getText().toString());
 
-            databaseReference.child("Endereco").child(enderecoCliente.getUUID()).setValue(enderecoCliente);
+            databaseReference.child("endereco").child(enderecoCliente.getUUID()).setValue(enderecoCliente);
 
             txtLocalEndereco.setText(null);
             txtNumeroEndereco.setText(null);
@@ -98,7 +98,7 @@ public class ContatarServicoDeLimpezaActivity extends AppCompatActivity {
             HorarioCliente horarioCliente = new HorarioCliente(
                     txtUUIDcliente, txtHorarioCliente.getText().toString());
 
-            databaseReference.child("HorarioServico").child(horarioCliente.getUUID()).setValue(horarioCliente);
+            databaseReference.child("horarioServico").child(horarioCliente.getUUID()).setValue(horarioCliente);
 
             Toast.makeText(this, "Horario salvo com sucesso", Toast.LENGTH_SHORT).show();
         } catch (Exception ex) {

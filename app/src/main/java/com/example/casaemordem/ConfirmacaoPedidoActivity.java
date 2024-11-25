@@ -22,6 +22,8 @@ public class ConfirmacaoPedidoActivity extends AppCompatActivity {
     private FirebaseDatabase firebaseDatabase;
     private DatabaseReference databaseReference;
 
+    String IDuserLogadoFim;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,8 +34,15 @@ public class ConfirmacaoPedidoActivity extends AppCompatActivity {
     }
 
     public void PaginaInicial(View view) {
-        startActivity(new Intent(this, PaginaInicialClienteActivity.class));
+        Intent mandaDados3 = new Intent(this, PaginaInicialClienteActivity.class);
+        Bundle bundleFim = new Bundle();
+        bundleFim.putString("IDuserLogado", IDuserLogadoFim);
+        mandaDados3.putExtras(bundleFim);
+        startActivity(mandaDados3);
+
     }
+
+
 
     private void iniciarFireBase() {
         firebaseDatabase = FirebaseDatabase.getInstance();
@@ -51,7 +60,7 @@ public class ConfirmacaoPedidoActivity extends AppCompatActivity {
 
                         if (qdtComodosCliente != null) {
                             String quartos = qdtComodosCliente.getQuantidadeComodosCliente();
-
+                            IDuserLogadoFim = qdtComodosCliente.getUUID();
                             if (quartos != null && !quartos.isEmpty()) {
                                 calcValorServico(quartos);
                             } else {
