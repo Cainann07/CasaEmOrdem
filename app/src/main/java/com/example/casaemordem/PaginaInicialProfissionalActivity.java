@@ -2,6 +2,7 @@ package com.example.casaemordem;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -51,5 +52,9 @@ public class PaginaInicialProfissionalActivity extends AppCompatActivity {
         slideModels.add(new SlideModel(R.drawable.imgpromocaohidraulica, ScaleTypes.FIT));
 
         imageSliderProfissional.setImageList(slideModels, ScaleTypes.FIT);
+    }
+
+    public void ServicoAgendado(View view) {
+        startActivity(new Intent(this, MeusServicosPendentesProfissionalActivity.class));
     }
 }

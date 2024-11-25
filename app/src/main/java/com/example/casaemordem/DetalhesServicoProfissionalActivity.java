@@ -2,6 +2,7 @@ package com.example.casaemordem;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -23,8 +24,8 @@ public class DetalhesServicoProfissionalActivity extends AppCompatActivity {
         });
     }
 
-    private void redirectConfirmacaoPedido(){
-        Intent proxPag = new Intent(this, ConfirmacaoPedidoActivity.class);
+    private void redirectConfirmacaoPedido(View view){
+        Intent proxPag = new Intent(this, MeusServicosAgendadosProfissionalActivity.class);
         startActivity(proxPag);
     }
 

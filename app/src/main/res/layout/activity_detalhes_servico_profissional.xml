@@ -9,7 +9,7 @@
 
     <include
         android:id="@+id/include"
-        layout="@layout/toolbar"
+        layout="@layout/toolbar_profissional"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
@@ -21,7 +21,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/bottom_nav" />
+        app:menu="@menu/bottom_menu_profissional" />
 
 
     <TextView

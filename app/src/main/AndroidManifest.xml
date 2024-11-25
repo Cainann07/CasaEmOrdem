@@ -13,6 +13,9 @@
         android:theme="@style/Theme.CasaEmOrdem"
         tools:targetApi="35">
         <activity
+            android:name=".toolbarProfissional"
+            android:exported="false" />
+        <activity
             android:name=".ChatProfissionalActivity"
             android:exported="false" />
         <activity
@@ -20,12 +23,10 @@
             android:exported="false" />
         <activity
             android:name=".ContatarServicoDeLimpezaActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".ContatarServicoActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".CalendarioActivity"
             android:exported="false" />
@@ -40,6 +41,9 @@
             android:exported="false" />
         <activity
             android:name=".MeusServicosAgendadosProfissionalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DetalhesServicoProfissionalActivity"
             android:exported="false" />
         <activity
             android:name=".PaginaInicialProfissionalActivity"
@@ -82,7 +86,7 @@
             android:exported="false" />
         <activity
             android:name=".PaginaInicialClienteActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".InfoEnderecoClienteActivity"
             android:exported="true" />
@@ -91,13 +95,10 @@
             android:exported="true" />
         <activity
             android:name=".SplashInicialActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".DadosCompartilhadosActivity"
             android:exported="true" />
-
         <activity
             android:name=".ChatClienteActivity"
             android:exported="true" />

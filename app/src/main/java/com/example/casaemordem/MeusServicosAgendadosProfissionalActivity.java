@@ -2,6 +2,7 @@ package com.example.casaemordem;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -23,13 +24,14 @@ public class MeusServicosAgendadosProfissionalActivity extends AppCompatActivity
         });
     }
 
-    private void redirectMeusServicosPendentesProfissional(){
+    public void redirectMeusServicosPendentesProfissional(View view){
         Intent proxPag = new Intent(this, MeusServicosPendentesProfissionalActivity.class);
         startActivity(proxPag);
     }
 
-    private void redirectMeusServicosHistoricoProfissional(){
+    public void HistoricoProfissional(View view){
         Intent proxPag = new Intent(this, MeusServicosHistoricoProfissionalActivity.class);
         startActivity(proxPag);
     }
+
 }

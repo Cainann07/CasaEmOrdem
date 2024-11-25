@@ -9,7 +9,7 @@
 
     <include
         android:id="@+id/include"
-        layout="@layout/toolbar"
+        layout="@layout/toolbar_profissional"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
@@ -100,7 +100,7 @@
             android:layout_weight="1"
             android:background="?attr/selectableItemBackground"
             android:fontFamily="@font/lato"
-            android:onClick="redirectMeusServicosAgendadosProfissional"
+            android:onClick="redirectServicosAgendadosProfissional"
             android:gravity="center"
             android:padding="16dp"
             android:text="Agendados"
@@ -132,7 +132,7 @@
             android:fontFamily="@font/lato"
             android:gravity="center"
             android:padding="16dp"
-            android:onClick="redirectMeusServicosHistoricoProfissional"
+            android:onClick="redirectHistoricoProfissional"
             android:text="Histórico"
             android:textColor="#000000" />
 
@@ -246,6 +246,7 @@
             android:backgroundTint="#F2B807"
             android:text="Analisar Serviço"
             android:textSize="15sp"
+            android:onClick="detalhesServico"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
