@@ -13,9 +13,9 @@
         android:title=""
         android:enabled="false"/>
     <item
-        android:id="@+id/btnMenuCalendario"
-        android:title="Calendário"
-        android:icon="@drawable/ic_calendario"/>
+        android:id="@+id/btnMenuServicos"
+        android:title="Serviços"
+        android:icon="@drawable/ic_servicos"/>
     <item
         android:id="@+id/btnMenuUsuario"
         android:title="Usuario"

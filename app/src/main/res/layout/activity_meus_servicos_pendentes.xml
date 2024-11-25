@@ -14,16 +14,52 @@
         android:layout_height="wrap_content" />
 
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNav"
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="277dp"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="233dp"
+        android:background="@color/white"
+        app:fabAlignmentMode="center"
+        app:fabAnchorMode="cradle"
+        app:fabCradleMargin="10dp"
+        app:fabCradleRoundedCornerRadius="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout5"
-        app:menu="@menu/bottom_nav" />
+        app:layout_constraintVertical_bias="0.977"
+        tools:ignore="BottomAppBar">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:background="@android:color/transparent"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/bottom_menu">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/white"
+                android:contentDescription="@string/camp_Txt_confirmar_senha"
+                android:paddingTop="60dp"
+                android:src="@drawable/ic_add_contratar_servico"
+                android:visibility="visible"
+                app:fabSize="auto"
+                app:layout_anchor="@+id/bottomAppBar"
+                app:layout_anchorGravity="center"
+                app:maxImageSize="40dp"
+                app:shapeAppearanceOverlay="@style/roundedImageViewRounded"
+                app:tint="@color/amareloPadrao"
+                tools:ignore="ImageContrastCheck" />
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+    </com.google.android.material.bottomappbar.BottomAppBar>
 
     <TextView
         android:id="@+id/txtMeusServicos"
