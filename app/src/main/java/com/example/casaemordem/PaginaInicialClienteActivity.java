@@ -18,6 +18,9 @@ import java.util.ArrayList;
 public class PaginaInicialClienteActivity extends AppCompatActivity {
     ActivityPaginaInicialClienteBinding binding;
 
+        String IDuserLogado;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,17 +29,21 @@ public class PaginaInicialClienteActivity extends AppCompatActivity {
         Slider();
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigationView);
 
+        Intent recebeDados = getIntent();
+        Bundle bundle = recebeDados.getExtras();
+
+        IDuserLogado = bundle.getString("IDuserLogado");
         bottomNavigationView.setOnItemSelectedListener(item -> {
 
             if (item.getItemId() == R.id.btnMenuHome) {
                 startActivity(new Intent(this, PaginaInicialClienteActivity.class));
             } else if (item.getItemId() == R.id.btnMenuChat) {
                 startActivity(new Intent(this, InfoEnderecoClienteActivity.class));
-            }else if (item.getItemId() == R.id.fab_bottom) {
+            } else if (item.getItemId() == R.id.fab_bottom) {
                 startActivity(new Intent(this, ContatarServicoActivity.class));
-            }else if (item.getItemId() == R.id.btnMenuCalendario) {
+            } else if (item.getItemId() == R.id.btnMenuCalendario) {
                 startActivity(new Intent(this, CalendarioActivity.class));
-            }else if (item.getItemId() == R.id.btnMenuUsuario) {
+            } else if (item.getItemId() == R.id.btnMenuUsuario) {
                 startActivity(new Intent(this, InfoEnderecoClienteActivity.class));
             }
             return true;
@@ -49,7 +56,11 @@ public class PaginaInicialClienteActivity extends AppCompatActivity {
     }
 
     public void ContratarServico(View view) {
-        startActivity(new Intent(this, ContatarServicoActivity.class));
+        Intent mandaDados2 = new Intent(this, ContatarServicoDeLimpezaActivity.class);
+        Bundle bundleEnvia = new Bundle();
+        bundleEnvia.putString("IDuserLogado", IDuserLogado);
+        mandaDados2.putExtras(bundleEnvia);
+        startActivity(mandaDados2);
     }
 
     public void Slider() {

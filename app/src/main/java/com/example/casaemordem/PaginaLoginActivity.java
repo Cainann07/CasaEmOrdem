@@ -23,6 +23,9 @@ public class PaginaLoginActivity extends AppCompatActivity {
     private EditText txtBuscaEmail;
     private EditText txtBuscaSenha;
 
+    DadosCompartilhadosActivity dadosCompartilhadosActivity = new DadosCompartilhadosActivity();
+    public String UuidUsuarioLogado;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -59,8 +62,13 @@ public class PaginaLoginActivity extends AppCompatActivity {
                                 Toast.makeText(PaginaLoginActivity.this, "\"Senha inválida.\"" , Toast.LENGTH_LONG).show();
                                 break;
                             } else {
-                                Intent proxPag = new Intent(PaginaLoginActivity.this, PaginaInicialClienteActivity.class);
-                                startActivity(proxPag);
+                                UuidUsuarioLogado = usuario.getUUID();
+
+                                Intent mandaDados = new Intent(PaginaLoginActivity.this, PaginaInicialClienteActivity.class);
+                                Bundle bundle = new Bundle();
+                                bundle.putString("IDuserLogado", UuidUsuarioLogado);
+                                mandaDados.putExtras(bundle);
+                                startActivity(mandaDados);
                             }
 
                         }
@@ -80,6 +88,5 @@ public class PaginaLoginActivity extends AppCompatActivity {
         }
 
     }
-
 
 }

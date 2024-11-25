@@ -35,6 +35,6 @@ public class ProfissionalDetalhado extends AppCompatActivity {
     }
 
     public void Proseguir(View view){
-        startActivity(new Intent(this, InfoEnderecoClienteActivity.class));
+        startActivity(new Intent(this, ConfirmacaoPedidoActivity.class));
     }
 }
