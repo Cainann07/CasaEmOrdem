@@ -41,7 +41,7 @@ public class PaginaInicialClienteActivity extends AppCompatActivity {
                 startActivity(new Intent(this, ChatClienteActivity.class));
             } else if (item.getItemId() == R.id.fab_bottom) {
                 startActivity(new Intent(this, ContatarServicoActivity.class));
-            } else if (item.getItemId() == R.id.btnMenuCalendario) {
+            } else if (item.getItemId() == R.id.btnMenuCalendarioProfissional) {
                 startActivity(new Intent(this, CalendarioActivity.class));
             } else if (item.getItemId() == R.id.btnMenuUsuario) {
                 startActivity(new Intent(this, InfoEnderecoClienteActivity.class));

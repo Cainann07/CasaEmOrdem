@@ -24,12 +24,12 @@ public class DetalhesServicoProfissionalActivity extends AppCompatActivity {
         });
     }
 
-    private void redirectConfirmacaoPedido(View view){
+    public void redirectConfirmacaoPedido(View view){
         Intent proxPag = new Intent(this, MeusServicosAgendadosProfissionalActivity.class);
         startActivity(proxPag);
     }
 
-    private void redirectPaginaInicialProfissional(){
+    public void redirectPaginaInicialProfissional(View view){
         Intent proxPag = new Intent(this, PaginaInicialProfissionalActivity.class);
         startActivity(proxPag);
     }
